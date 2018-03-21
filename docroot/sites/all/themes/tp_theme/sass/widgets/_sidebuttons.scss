@@ -1,0 +1,45 @@
+#tab_side_buttons{
+	@media (max-width: 800px){
+		display:none !important;
+	}
+	position: fixed;
+	top:50%;
+	z-index: 10000;
+	left:-163px;
+	@include m-transform(rotate(90deg));
+	// @include m-transition(all,0.5s);
+	&.left{
+		left:-163px;
+		@include m-transform(rotate(90deg));
+		a{
+			@include border-radius(0 0 5px 5px);
+		}
+	}
+	&.right{
+		left:auto;
+		right:-163px;
+		@include m-transform(rotate(-90deg));
+		a{ 
+			@include border-radius(5px 5px 0 0);
+		}
+	}
+	a { 
+		margin-top: -100px;
+		display: block;
+		padding: 12px 35px;
+    	width: 150px;
+    	text-align: center;
+		background-color:color(orange-medium);
+		color:color(white);
+		text-decoration: none;
+		// @include m-transition(all,0.5s);
+		border:2px solid color(white);
+		&:hover{
+			border:2px solid color(white);
+			background-color: color(blue-medium);
+	    	color: color(white);
+	    	@include m-transition(all,0.5s);
+	    	text-decoration: none;
+		}
+	}
+}

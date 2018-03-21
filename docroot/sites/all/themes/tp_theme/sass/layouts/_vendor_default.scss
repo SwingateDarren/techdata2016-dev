@@ -1,0 +1,934 @@
+.page-vendors-citrix-product,
+.page-vendors-blackberry-product,
+.page-vendors-vmware-workspace-one,
+.page-vendors-vmware-airwatch,
+.page-vendors-microsoft-product {
+    .rank-1 {
+        @media (max-width: 799px) {
+            @include panel(1, 1, 0);
+            background-image: none !important;
+            p {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+        @media (min-width:800px) {
+            @include panel(1, 300px, 0);
+        }
+        h2 {
+            @include font-page-section-header();
+            text-align: left;
+        }
+    }
+    .rank-2 {
+        background-color: color(grey-lightest);
+        @include panel(1, 1, 0);
+        h2 {
+            @include font-page-section-header();
+            padding-bottom: 30px;
+        }
+        @media (max-width:799px) {
+            p {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+    .rank-3 {
+        @include panel(1, 1, 0);
+        h3 {
+            @include font-page-section-header();
+            @media (max-width: 1200px) {
+                padding-left: 20px;
+            }
+        }
+        h4 {
+            padding-top: 50px;
+            font-size: 1.5rem;
+            color: color(blue-medium);
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid color(grey-darker);
+            margin-top: 30px;
+        }
+        ul {
+            margin-left: 0px;
+            li {
+                background: image-url("bullet-orange-tick.png") 0 0 no-repeat;
+                @media (max-width: 799px) {
+                    background-image: none !important;
+                }
+                padding-left:30px;
+                min-height: 30px;
+                padding-top:1px;
+                list-style:none;
+            }
+        }
+    }
+    .rank-4 {
+        background-color: color(grey-lightest);
+        @include panel(1,
+        1,
+        0);
+        h2 {
+            @include font-page-section-header();
+        }
+        h3 {
+            font-weight: 100;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+        }
+        .col-3 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        div.row {
+            clear: both;
+        }
+        .summary {
+            padding-bottom: 0.5rem;
+        }
+        p.subtitle {
+            padding-top: 50px;
+            font-weight: 400;
+            font-size: 1.313rem;
+        }
+        .date {
+            font-size: 0.875rem;
+            color: color(grey-text);
+        }
+        .type {
+            background-color: color(blue-lighter);
+            color: white;
+            height: 30px;
+            width: auto;
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 7px;
+            padding-bottom: 10px;
+            margin-left: 20px;
+            position: relative;
+            top: 15px;
+            font-size: 0.875rem;
+            font-weight: 100;
+            &:before {
+                content: "";
+                float: left;
+                margin-left: -20px;
+                margin-top: -7px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 0px 30px 10px;
+                border-color: transparent transparent color(blue-lighter) transparent;
+            }
+            &:after {
+                content: "";
+                margin-left: 10px;
+                margin-top: -7px;
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 30px 10px 0px 0px;
+                border-color: color(blue-lighter) transparent transparent transparent;
+            }
+        }
+    }
+    .views-row-5 {
+        border-bottom: 4px solid white;
+        .col-3 p img {
+            display: inline-block;
+            width: auto
+        }
+    }
+    .rank-5 {
+        @include next_step();
+        margin-bottom: 4px
+    }
+}
+
+.page-vendors-cisco-solution {
+    .rank-0 {
+        .wrapper {
+            max-width: 1050px;
+        }
+    }
+    .rank-1 {
+        @include panel(1,
+        1,
+        0);
+        .col-3wideleft {
+            @media(min-width: 799px) {
+                padding-right: 120px;
+            }
+            .section-header,
+            .subtitle {
+                text-align: left;
+            }
+            .section-header {
+                font-weight: lighter;
+            }
+            p {
+                font-size: 1.3125rem;
+                line-height: 1.675rem;
+            }
+        }
+        .contactInfo {
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            border: 1px solid color(grey-lighter);
+            a {
+                color: color(grey-text);
+            }
+            .heading {
+                background-color: color(blue-darker);
+                color: white;
+                padding: 50px 0;
+                margin-bottom: 30px;
+                h3 {
+                    margin: 0;
+                    padding: 0;
+                }
+                p {
+                    font-size: 1.3125rem;
+                    line-height: 1.75rem;
+                    font-weight: bold;
+                    padding-bottom: 0!important;
+                }
+            }
+            p:last-child {
+                padding-bottom: 45px;
+                a {
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    .rank-2 {
+        .wrapper {
+            .content,
+            .content-on-left,
+            .content-on-right {
+                padding: 0;
+            }
+        }
+        .col-2 {
+            padding: 0 !important;
+            height: 433px;
+            background-image: url("/sites/default/files/vendors/cisco-solutions-2.png");
+            background-size: cover;
+            border-right: 3px solid white;
+            &:first-child {
+                background-image: url("/sites/default/files/vendors/cisco-solutions-1.png");
+            }
+            .content {
+                position: relative;
+                height: 433px;
+                vertical-align: middle;
+                h2,
+                p,
+                a {
+                    text-align: center;
+                    max-width: 580px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                h2 {
+                    padding-top: 10%;
+                    font-size: 1.5rem;
+                    color: white;
+                }
+                p.subtitle {
+                    font-size: 1rem;
+                    display: block;
+                    color: white;
+                }
+            }
+            @media (max-width:800px) {
+                border-bottom: 4px solid white;
+            }
+            @media (max-width:1000px) {
+                width: 100%;
+            }
+        }
+    }
+    .rank-3 {
+        background: #159cdd;
+        color: white;
+        height: 206px;
+        .content {
+            @include m-max-width(1070px);
+            @include panel(1,
+            1,
+            0);
+            h3 {
+                color: white;
+                width: 70%;
+                float: left;
+                padding: 0 0 1rem 0;
+                margin: 0;
+                font-weight: 300;
+                @media (max-width: 1200px) {
+                    padding-left: 20px;
+                }
+            }
+            p {
+                width: 30%;
+                float: left;
+                text-align: center;
+            }
+        }
+        @media (max-width: 1000px) {
+            height: auto;
+            .content {
+                h3,
+                p {
+                    float: none !important;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .rank-4 {
+        @include panel(1,
+        1,
+        0);
+        h2 {
+            @include font-page-section-header();
+            font-size: 2.1875rem;
+        }
+        .subtitle {
+            @include m-max-width(960px);
+            margin-bottom: 50px;
+            padding: 0 20px;
+        }
+        p {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .rank-7 {
+        @include next_step();
+        margin-bottom: 4px;
+        border-top: 0!important;
+        h2 {
+            font-size: 0.875rem!important;
+        }
+        h3 {
+            font-size: 1.875rem!important;
+        }
+        p {
+            font-size: 1rem!important;
+            &.subtitle {
+                font-size: 1.125rem!important;
+            }
+        }
+    }
+}
+
+.page-vendors-citrix-solution,
+.page-vendors-blackberry-solution,
+.page-vendors-vmware-solution,
+.page-vendors-microsoft-solution {
+    .rank-1 {
+        @include panel(1,
+        1,
+        0);
+        .col-3wideleft {
+            .section-header,
+            .subtitle {
+                text-align: left;
+            }
+        }
+        .contactInfo {
+            padding: 0;
+            margin: 0;
+            border: 1px solid color(grey-lighter);
+            a {
+                color: color(grey-text);
+            }
+            .heading {
+                background-color: color(blue-darker);
+                color: white;
+                padding: 50px 0;
+                margin-bottom: 35px;
+                h3 {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .rank-2 {
+        .wrapper {
+            .content,
+            .content-on-left,
+            .content-on-right {
+                padding: 0;
+            }
+        }
+        .col-3 {
+            padding: 0 !important;
+            height: 433px;
+            background: image-url("ms-sol-2.jpg") 0 0 no-repeat;
+            background-size: cover;
+            border-right: 3px solid white;
+            &:first-child {
+                background-image: image-url("ms-sol-1.jpg");
+            }
+            &:nth-child(3) {
+                background-image: image-url("ms-sol-3.jpg");
+                border-right: 0px solid white;
+            }
+            // &:before {
+            // 	content: '';
+            // 	width: 100%;
+            // 	height: 433px;
+            // 	background-color: rgba(0, 0, 0, 0.7);
+            // 	position: relative;
+            // 	display: block;
+            // 	@media (max-width:800px) {
+            // 		height: 429px;
+            // 	}
+            // }
+            .content {
+                position: relative;
+                height: 433px;
+                vertical-align: middle;
+                h2,
+                p,
+                a {
+                    text-align: center;
+                    max-width: 390px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                h2 {
+                    padding-top: 10%;
+                    font-size: 1.5rem;
+                    color: white;
+                }
+                p.subtitle {
+                    font-size: 1rem;
+                    display: block;
+                    color: white;
+                }
+            }
+            @media (max-width:800px) {
+                border-bottom: 4px solid white;
+            }
+            @media (max-width:1000px) {
+                width: 100%;
+            }
+        }
+    }
+    .rank-3 {
+        background: color(orange-medium);
+        color: white;
+        height: 206px;
+        .content {
+            @include m-max-width(1070px);
+            @include panel(1,
+            1,
+            0);
+            h3 {
+                color: white;
+                width: 70%;
+                float: left;
+                padding: 0 0 1rem 0;
+                margin: 0;
+                font-weight: 300;
+                @media (max-width: 1200px) {
+                    padding-left: 20px;
+                }
+            }
+            p {
+                width: 30%;
+                float: left;
+                text-align: center;
+            }
+        }
+        @media (max-width: 1000px) {
+            height: auto;
+            .content {
+                h3,
+                p {
+                    float: none !important;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .rank-4 {
+        @include panel(1,
+        1,
+        0);
+        h2 {
+            @include font-page-section-header();
+        }
+        .subtitle {
+            @include m-max-width(960px);
+            margin-bottom: 50px;
+            padding: 0 20px;
+        }
+        p {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .rank-5 {
+        background-color: color(grey-lightest);
+        @include panel(1,
+        1,
+        0);
+        h2 {
+            @include font-page-section-header();
+        }
+        h3 {
+            font-weight: 100;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+        }
+        .col-3 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        div.row {
+            clear: both;
+        }
+        .summary {
+            padding-bottom: 0.5rem;
+        }
+        p.subtitle {
+            padding-top: 50px;
+            font-weight: 400;
+            font-size: 1.313rem;
+        }
+        .date {
+            font-size: 0.875rem;
+            color: color(grey-text);
+        }
+        .type {
+            background-color: color(blue-lighter);
+            color: white;
+            height: 30px;
+            width: auto;
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 7px;
+            padding-bottom: 10px;
+            margin-left: 20px;
+            position: relative;
+            top: 15px;
+            font-size: 0.875rem;
+            font-weight: 100;
+            &:before {
+                content: "";
+                float: left;
+                margin-left: -20px;
+                margin-top: -7px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 0px 30px 10px;
+                border-color: transparent transparent color(blue-lighter) transparent;
+            }
+            &:after {
+                content: "";
+                margin-left: 10px;
+                margin-top: -7px;
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 30px 10px 0px 0px;
+                border-color: color(blue-lighter) transparent transparent transparent;
+            }
+        }
+    }
+    .views-row-6 {
+        border-bottom: 4px solid white;
+        .col-3 p img {
+            display: inline-block;
+        }
+    }
+    .rank-6 {
+        @include next_step();
+        margin-bottom: 4px
+    }
+}
+
+.page-vendors-citrix-solution .rank-3 {
+    background: color(blue-medium) !important;
+}
+
+.page-vendors-blackberry-solution .rank-3 {
+    background: black !important;
+}
+
+.page-vendors-vmware-solution .rank-3 {
+    background: color(green-medium) !important;
+}
+
+.page-vendors-vmware-workspace-one {
+    .rank-1 {
+        height: 875px;
+        ul {
+            margin-left: 0px;
+            li {
+                background: image-url("bullet-green-tick.png") 0 0 no-repeat;
+                padding-left: 30px;
+                min-height: 30px;
+                padding-top: 1px;
+                list-style: none;
+            }
+        }
+    }
+}
+
+.page-vendors-citrix-product .rank-1 {
+    height: 755px;
+}
+
+.page-vendors-blackberry-product .rank-1 {
+    height: 585px;
+}
+
+.page-vendors-vmware-airwatch .rank-1 {
+    height: 685px;
+}
+
+
+.page-vendors-vmware-nsx,
+.page-vendors-vmware-vsan,
+.page-vendors-vmware-vsphere-with-operations-management,
+.page-vendors-vmware-vrealize-automation,
+.page-vendors-vmware-vrealize-operations,
+.page-vendors-vmware-horizon{
+	.rank-0 {
+		.wrapper {
+			max-width: 1050px;
+		}
+	}
+	.rank-1{
+		@include panel(1,0,0);
+	    height: 650px;
+		@media(max-width:980px){
+		    background: inherit!important;
+		    padding-bottom: 20px;
+		}
+		.content {
+		    padding-left: 35px;
+		    padding-right: 35px;
+		}
+		.col-3 {
+			@media(min-width:980px){
+			    padding-right: 110px;
+			}
+		    h2 {
+	    	    font-weight: normal;
+				font-size: 1.875rem;
+				text-align: left;
+		    }
+		}
+		.col-3wide {
+			p {
+				font-size: 1.3125rem;
+			    line-height: 1.675rem;
+			}
+		}
+	}
+	.rank-2{
+		@include panel(1,1,0);
+		background-color: color(grey-lighter);
+	    padding-left: 35px;
+	    padding-right: 35px;
+		h2 {
+		    color: color(blue-medium);
+		    font-size: 2.1875rem;
+		    font-weight: normal;
+		}
+		@media(min-width:981px){
+			h2 {
+			    margin-bottom: 15px;
+			}
+			.col-2,.col-3 {
+			    margin-top: 40px;
+				p {
+					strong {
+						font-size: 1.125rem;
+					}
+				}
+			}
+			.col-2 {
+				padding-right: 70px;
+			}
+		}
+	}
+    .rank-3 {
+        @include panel(1,1,1);
+        .col-3 {
+			@media(min-width:800px){
+	    	    max-width: 280px;
+	    	}
+        	h2 {
+			    text-align: left;
+			    font-weight: normal;
+			    font-size: 1.875rem;
+        	}
+        }
+        .col-3wide {
+        	h3 {
+			    color: color(blue-darker);
+			    margin-top: 40px;
+			    margin-bottom: 20px;
+        	}
+        	p {
+    		    padding-bottom: 35px;
+        	}
+        }
+    }
+	.rank-4{
+		@include next_step();
+		margin-bottom:4px;
+		border-top: 0!important;
+		h2 {
+		    font-size: 0.875rem!important;
+		}
+		h3 {
+		    font-size: 1.875rem!important;
+		}
+		p {
+			font-size: 1rem!important;
+			&.subtitle {
+				font-size: 1.125rem!important;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+.page-vendors-vmware-solution {
+    .rank-0 {
+        .wrapper {
+            max-width: 920px;
+        }
+    }
+    .rank-1 {
+        @include panel(1,
+        1,
+        0);
+        .col-3wideleft {
+            @media(min-width: 799px) {
+                padding-right: 120px;
+            }
+            .section-header,
+            .subtitle {
+                text-align: left;
+            }
+            .section-header {
+                font-weight: lighter;
+            }
+            p {
+                font-size: 1.3125rem;
+                line-height: 1.675rem;
+            }
+        }
+        .contactInfo {
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            border: 1px solid color(grey-lighter);
+            a {
+                color: color(grey-text);
+            }
+            .heading {
+                background-color: color(blue-darker);
+                color: white;
+                padding: 50px 0;
+                margin-bottom: 30px;
+                h3 {
+                    margin: 0;
+                    padding: 0;
+                }
+                p {
+                    font-size: 1.3125rem;
+                    line-height: 1.75rem;
+                    font-weight: bold;
+                    padding-bottom: 0!important;
+                }
+            }
+            p:last-child {
+                padding-bottom: 45px;
+                a {
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    .rank-2 {
+        .wrapper {
+            .content,
+            .content-on-left,
+            .content-on-right {
+                padding: 0;
+            }
+        }
+        .col-3 {
+            padding: 0 !important;
+            height: 433px;
+            background-image: url("/sites/default/files/vendors/vmware-solutions-2.png");
+            background-size: cover;
+            border-right: 3px solid white;
+            &:first-child {
+                background-image: url("/sites/default/files/vendors/vmware-solutions-1.png");
+            }
+            &:nth-child(3) {
+                background-image: url("/sites/default/files/vendors/vmware-solutions-3.png");
+                border-right: 0px solid white;
+            }
+            // &:before {
+            //  content: '';
+            //  width: 100%;
+            //  height: 433px;
+            //  background-color: rgba(0, 0, 0, 0.7);
+            //  position: relative;
+            //  display: block;
+            //  @media (max-width:800px) {
+            //      height: 429px;
+            //  }
+            // }
+            .content {
+                position: relative;
+                height: 433px;
+                vertical-align: middle;
+                h2,
+                p,
+                a {
+                    text-align: center;
+                    max-width: 390px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                h2 {
+                    padding-top: 12%;
+                    font-size: 1.5rem;
+                    color: white;
+                }
+                p.subtitle {
+                    font-size: 1rem;
+                    display: block;
+                    color: white;
+                }
+            }
+            @media (max-width:800px) {
+                border-bottom: 4px solid white;
+            }
+            @media (max-width:1000px) {
+                width: 100%;
+            }
+        }
+    }
+    .rank-3 {
+        background: #696566!important;
+        color: white;
+        height: 206px;
+        .content {
+            @include m-max-width(1070px);
+            @include panel(1,
+            1,
+            0);
+            h3 {
+                color: white;
+                width: 70%;
+                float: left;
+                padding: 0 0 1rem 0;
+                margin: 0;
+                font-weight: 300;
+                @media (max-width: 1200px) {
+                    padding-left: 20px;
+                }
+            }
+            p {
+                width: 30%;
+                float: left;
+                text-align: center;
+            }
+        }
+        @media (max-width: 1000px) {
+            height: auto;
+            .content {
+                h3,
+                p {
+                    float: none !important;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .rank-4 {
+        @include panel(1,
+        1,
+        0);
+        h2 {
+            @include font-page-section-header();
+            font-size: 2.1875rem;
+        }
+        .subtitle {
+            @include m-max-width(960px);
+            margin-bottom: 50px;
+            padding: 0 20px;
+        }
+        p {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media(min-width:800px){
+            .row {
+                padding-bottom: 30px;
+                &:last-of-type {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+    .views-row-6 {
+        border-bottom: 0;
+        display: none;
+    }
+    .rank-6 {
+        @include next_step();
+        border-top: 0!important;
+        margin-bottom: 0;
+        h2 {
+            font-size: 0.875rem!important;
+        }
+        h3 {
+            font-size: 1.875rem!important;
+        }
+        p {
+            font-size: 1rem!important;
+            &.subtitle {
+                font-size: 1.125rem!important;
+            }
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,172 @@
+// Stores all of the default styles for the modal popups featured in various files
+.popup-modal, .popup-container {
+	background: rgba(255, 255, 255, 0.7);
+	width: 100%;
+	height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: none;
+
+	&.fullscreen {
+	  .popup-wrap,
+	  .modal-wrap {
+		@include m-transform(translateX(-50%));
+		top: 0;
+		left: 50%;
+		width: 100%;
+		height: 100%;
+
+		.close {
+		  z-index: 200;
+		  position: fixed;
+
+		}
+
+		> .scrollable {
+		  overflow-y: scroll;
+		  padding-bottom: 50px;
+		  position: absolute;
+		  width: 100%;
+		  height: 100%;
+		  box-sizing: border-box;
+		  left: 0;
+		  top: 0;
+		}
+	  }
+	}
+
+  	.popup-wrap,
+    .modal-wrap {
+		box-sizing: border-box !important;
+    	background: color(white);
+		border-radius: 6px;
+		box-shadow: 0px 1px 7px 0px #8C8C8C;
+		text-align: center;
+		@include m-max-width(870px);
+		padding: 0 50px;
+
+		.scrollable-content {
+		  padding: 4em 2em;
+		  @include clearfix;
+		}
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		width: 90%;
+		@include m-transform(translateX(-50%) translateY(-50%));
+
+		@include clearfix;
+
+// 		@include breakpoint(tablet) {
+// //			margin-left:20px; WTF????
+// 		  width: 88%;
+// 		}
+
+// 		h2 {
+// 			@include breakpoint(tablet) {
+// 				font-size: 2em;
+// 			}
+
+// 			@include breakpoint(breakpoint500) {
+// 				font-size: 1.75em;
+// 			}
+// 		}
+
+// 		h3 {
+// 			@include breakpoint(tablet) {
+// 				font-size: 1.5em;
+// 			}
+// 		}
+
+		h4 {
+			font-size: 1.75em;
+			// font-size: 2rem;
+			margin-bottom: 1em;
+		}
+
+		p {
+			text-align: center;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+
+	  	ul {
+		  max-width: 500px;
+		  display: inline-block;
+		  margin: 0 auto;
+		}
+		li {
+			// PATRICK EDIT - MISSING FILE
+			// background:image-url("li-arrow-blue.png") left 7px no-repeat;
+			text-align: left;
+			list-style: none;
+			padding-left:20px;
+			line-height:1.7em;
+		}
+	}
+
+	.close,
+	.service-modal-close,
+	.modal-close {
+		position: absolute;
+	    padding: 20px;
+	    background: #ccc;
+	    top: 1em;
+	    right: 1em;
+	    background: image-url("cross-icon.png") center center no-repeat;
+	    @include m-transform(scale(1));
+	    @include m-transition(all 0.35s);
+	    cursor: pointer;
+
+	    &:hover {
+          opacity: 0.8;
+          @include m-transform(scale(0.80));
+        }
+	}
+}
+
+// EU Cookie Banner Styles
+// #sliding-popup {
+// 	.popup-content {
+// 		@include clearfix;
+// 		padding: 0.8em 0;
+
+// 		#popup-text {
+// 			font-weight: normal;
+
+// 			// @include breakpoint(breakpoint500) {
+// 			// 	text-align: center;
+// 			// }
+
+// 			// h2 {
+// 			// 	@include breakpoint(breakpoint500) {
+// 			// 		font-size: 0.875em;
+// 			// 	}
+// 			// }
+// 		}
+
+// 		h2 {
+// 			a {
+// 				color: color(teal);
+// 			}
+// 		}
+
+// 		#popup-buttons {
+// 		button {
+// 			margin-top: 0;
+// 			@extend .btn;
+// 			border: none;
+// 			background: color(white);
+// 			color: color(blue);
+// 			box-shadow: none;
+// 			text-shadow: none;
+// 			padding: 7px 20px;
+// 			font-weight: normal;
+// 			display: inline-block;
+// 		}
+// 	}
+// 	}
+// }

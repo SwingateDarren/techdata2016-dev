@@ -1,0 +1,116 @@
+
+@font-face{
+    font-family: 'Gotham-Book';
+    src: local("Gotham-Book"),
+    	 url('/sites/all/themes/tp_theme/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),  url('/sites/all/themes/tp_theme/fonts/Gotham-Book.otf')  format('opentype'),
+	     url('/sites/all/themes/tp_theme/fonts/Gotham-Book.woff') format('woff'), url('/sites/all/themes/tp_theme/fonts/Gotham-Book.ttf')  format('truetype'), url('/sites/all/themes/tp_theme/fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+}
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: local("Gotham-Medium"),
+    	url('/sites/all/themes/tp_theme/fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),  url('/sites/all/themes/tp_theme/fonts/Gotham-Medium.otf')  format('opentype'),
+	     url('/sites/all/themes/tp_theme/fonts/Gotham-Medium.woff') format('woff'), url('/sites/all/themes/tp_theme/fonts/Gotham-Medium.ttf')  format('truetype'), url('/sites/all/themes/tp_theme/fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+}
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: local("Gotham-Bold"),
+         url('/sites/all/themes/tp_theme/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),  url('/sites/all/themes/tp_theme/fonts/Gotham-Bold.otf')  format('opentype'),
+	     url('/sites/all/themes/tp_theme/fonts/Gotham-Bold.woff') format('woff'), url('/sites/all/themes/tp_theme/fonts/Gotham-Bold.ttf')  format('truetype'), url('/sites/all/themes/tp_theme/fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+}
+
+$font_motorola : "Gotham-Book";
+$font_motorola_medium : "Gotham-Medium";
+$font_motorola_bold : "Gotham-Bold";
+
+@mixin motorola-normal{
+	font-family: $font_motorola, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin motorola-bold{
+	font-family: $font_motorola_bold, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin motorola-medium{
+	font-family: $font_motorola_medium, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+.motorola-normal{
+	@include motorola-normal;
+}
+.motorola-bold{
+	@include motorola-bold;
+}
+.motorola-medium{
+	@include motorola-medium;
+}
+
+
+.vendor-moto {
+	h1,h2,h3,h4,h5,p {
+		@include motorola-normal;
+	}
+	h2,h3,h4,h5,p {
+		color: color(motorola-grey-dark);
+	}
+	h1{
+		font-size:2.25rem;
+	}
+	h2{
+		font-size:2.25rem;
+	}
+	h3{
+		font-size:1.3125rem;
+	}
+	strong{
+		@include motorola-bold;
+	}
+	.font-mpu-header, .mpu-header{
+		@include motorola-medium;
+		font-size:2.25rem;
+		line-height: 2.75rem;
+		color:white;	
+		font-weight:500;
+	}
+	.font-mpu-subtitle, .mpu-subtitle, {
+		@include motorola-medium;
+		font-weight:500;
+	}
+	.font-page-section-header, .page-section-header, .section-header, h2.section-header {
+		@include motorola-medium;
+		font-size:2.25rem;
+		line-height: 2.5rem;
+		font-weight:500;	
+	}
+	.font-body-subtitle, .subtitle {
+
+	}
+	.font-body, .body,p {
+	}
+	.font-body-4, .body-4 {
+	}
+	.font-body-4-text, .body-4-text {
+	}
+	.font-menu, .menu {
+	}
+	.font-button-box, .button-box {
+	}
+	.font-button-text, .button-text, .button-link {
+		@include motorola-bold;
+		// font-weight:500;
+		// font-size: 1rem;
+	}
+	.button-primary, .button-light, .button-white, .button{
+		@include motorola-bold;
+	}
+	.font-form-field, .form-field {
+	}
+	.font-quote, .quote {
+		@include motorola-normal;
+		font-size:1.875rem;
+	}
+	.font-quote-by, .quote-by {
+	}
+}

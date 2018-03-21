@@ -1,0 +1,34 @@
+div.social-share,div.social-pages{
+	display:inline-block;
+	a.social-share{
+		width:20px;
+		height:20px;
+		margin-left:50px;
+		display: inline-block;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		cursor: hand;
+		&.linkedin{
+			background-image:url('/sites/all/themes/tp_theme/images/social-linkedin.png');
+		}
+		&.google{
+			background-image:url('/sites/all/themes/tp_theme/images/social-googleplus.png');
+		}
+		&.twitter{
+			background-image:url('/sites/all/themes/tp_theme/images/social-twitter.png');
+		}
+		&.facebook{
+			background-image:url('/sites/all/themes/tp_theme/images/social-facebook.png');
+		}
+		&.youtube{
+			background-image:url('/sites/all/themes/tp_theme/images/social-youtube.png');
+		}
+	}
+}
+div.social-pages {
+    margin-top: 50px;
+    text-align: right;
+    @media (min-width:1200px) {
+    	width: 461px;
+    }
+}

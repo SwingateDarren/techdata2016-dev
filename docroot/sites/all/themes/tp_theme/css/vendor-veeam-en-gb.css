@@ -1,0 +1,91 @@
+/* Import Sass mixins, variables, Compass modules, etc. */
+/* Sitewide mixins &variables avaialble for other parts of the theme */
+/* line 126, /sass/globals/_fonts.scss */
+.font-mpu-header, .mpu-header {
+  font-size: 2.5rem;
+  line-height: 3.375rem;
+  font-weight: 300;
+}
+
+
+/* line 11, /sass/globals/_fonts.scss */
+
+/* CORE STYLES */
+.font-mpu-header else, .mpu-headsamsunfer else {color: #fff;}
+h1.mpu-header {font-weight: normal !important;}
+.mystyletestline {}
+  .newtestcss {}
+
+.vertical-text { margin-top: 40px;}
+#block-panels-mini-related-content-panel h3 { font-family: Helvetica, Arial, "sans-serif" !important;}
+.cta_button { padding: 20px; background-color: #ffffff; color: #039fda; border-radius: 10px; font-size: 39px; font-weight: bold; display: inline-block;text-decoration: none }
+.cta_button a { text-decoration: none}
+.cta_button:hover { background: #333333; color: #ffffff;}
+.iconset { margin-top: 100px !important;}
+
+
+/* ROWS */
+.views-row-2 { background-color: #ffffff !important; padding: 40px 0px 40px 0px}
+.views-row-2 .col-2 { height: inherit !important;}
+.related-content-generic .views-row-2 { padding: 0px}
+.related-content-generic .type {font-family: Helvetica, Arial, "sans-serif" !important;}
+.views-row-7 { background-color: #333333 !important; padding:40px;}
+.views-row-10 { background-color: #333333 !important; padding:40px;}
+
+
+/* SECTIONS */
+#section-6103 {height: 500px;}
+#section-6103.text { height: inherit !important;}
+#section-6099.text { margin-top: 40px;}
+#section-6086 { background: #333333 !important; height: 550px;}
+#section-6086 div.text { height: inherit !important; padding-top: 70px !important;}
+#section-6086 div.image-on-right { margin-top: -50px;}
+
+
+/* NODES */
+.node-6081 { background-color: #ffffff !important; padding-top:40px; min-height: 600px !important;}
+.node-6066 { background-color: #ffffff !important; padding:40px;  min-height: 600px !important}
+.node-6102 { padding: 80px 20px 80px 20px;}
+.view-why-work-with-veeam .node-6101 { background-color: #e5e5e5 !important; padding-top:40px !important; min-height: 450px;}
+.view-why-work-with-veeam .node-6101 .text {  margin-bottom: 20px;}
+
+
+
+
+
+
+/* RESPONSIVE MEDIA QUERIES */
+
+/* Smartphones (portrait and landscape) ----------- */
+
+
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 980px) {
+/* Styles */
+ .node-6081, .node-6101  { background-image: none !important; min-height: auto !important; padding: 40px !important;}
+	.node-6086 { padding-bottom: 40px;}
+	.views-row-2 { padding-top: 0px !important; }
+	.views-row-2 .text { padding: 40px;}
+	.node-6103, .node-6091, .node-6086 { padding: 40px !important;}
+	.node-6103 br { display: none; }
+	.node-6103 h2 { font-size: 30px !important; line-height: 40px;}
+	.node-6099 { padding-left: 40px !important; padding-right: 40px !important; padding-bottom: 30px;}
+	.iconset { margin-top: 0px !important; padding: 20px;}
+}
+
+
+
+@media (max-width: 980px) {
+  /* line 348, /sass/globals/_mixins.scss */
+	.views-row-2 .text { padding: 0px !important;}
+}
+
+
+@media (max-width: 800px) {
+  /* line 386, /sass/globals/_mixins.scss */
+	.views-row-2, .views-row-1 { padding: 0px !important;}
+	.views-row-2 .text { padding: 0px !important;}
+}

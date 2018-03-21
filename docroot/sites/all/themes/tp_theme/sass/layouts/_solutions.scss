@@ -1,0 +1,890 @@
+.solutions {
+	.rank-0 {
+		h1, h2 {
+			@include m-max-width(620px);
+			text-align: center;
+		}
+	}
+	.views-row-2 .node-text-image {
+		@include panel(1, 1, 0);
+
+		hr {
+			width: 50px;
+			margin: 48px auto;
+			border: 0;
+			border-bottom: 3px solid color(blue-lighter);
+		}
+		h2 {
+		text-align: center;
+		@include m-max-width(850px);
+		margin-bottom:1.5rem;
+	}
+	.subtitle{
+
+		@include m-max-width(850px);
+		padding-bottom: 1rem;
+	}
+		//@media (max-width:800px){
+			p{
+				text-align: center;
+				padding-left: 20px;
+				padding-right:20px;
+			}
+		//}
+	}
+	.views-row-3 .node-text-image {
+		height: 575px;
+		@include panel(1, 1, 0);
+
+		p {
+			@include m-max-width(960px);
+			text-align: center;
+		}
+		@media (max-width:1199px) {
+			height: auto;
+			background-size: cover !important;
+
+			.text {
+				margin-left: 10px;
+				margin-right: 10px;
+				text-align: center;
+			}
+		}
+	}
+	.views-row-4 .node-text-image {
+		background-color: color(orange-medium);
+		@include panel(1, 1, 0);
+		text-align: center;
+
+		.col-3 {
+			margin-top: 30px;
+
+			p {
+				@include m-max-width(260px);
+
+				&:first-child {
+					padding-bottom: 24px;
+				}
+				img{
+					display:inline-block;
+				}
+			}
+		}
+	}
+	.views-row-5 .node-text-image {
+		@include panel(1, 1, 0);
+
+		h2 {
+			@include font-page-section-header();
+		}
+	}
+	.views-row-6 .node-text-image {
+		.wrapper {
+			.content, .content-on-left, .content-on-right {
+				padding: 0;
+			}
+		}
+		.col-3 {
+			padding: 0 !important;
+			height: 433px;
+			background: image-url("solutions-p5-2.jpg") 0 0 no-repeat;
+			background-size: cover;
+
+			&:first-child {
+				background-image: image-url("solutions-p5-1.jpg");
+			}
+			&:nth-child(3) {
+				background-image: image-url("solutions-p5-3.jpg");
+			}
+			&:before {
+				content: '';
+				width: 100%;
+				height: 433px;
+				background-color: rgba(0, 0, 0, 0.7);
+				position: relative;
+				display: block;
+
+				@media (max-width:800px) {
+					height: 429px;
+				}
+			}
+			&:hover {
+				&:before {
+					background-color: rgba(0, 175, 215, 0.7);
+				}
+				.content {
+					a {
+						color: white
+					}
+					p.subtitle {
+						display: block;
+					}
+					h2 {
+						padding-top: 15%;
+					}
+				}
+			}
+			.content {
+				position: relative;
+				top: -433px;
+				height: 433px;
+				vertical-align: middle;
+
+				h2, p, a {
+					text-align: center;
+					max-width: 390px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				h2 {
+					padding-top: 30%;
+					font-size: 1.5rem;
+					color: white;
+				}
+				p.subtitle {
+					font-size: 1rem;
+					display: none;
+					color: white;
+				}
+			}
+			@media (max-width:800px) {
+				border-bottom: 4px solid white;
+			}
+			@media (max-width:1000px) {
+				width: 100%;
+			}
+		}
+	}
+	.views-row-7 .node-text-image {
+		@include work-with-vendors;
+	}
+	.views-row-8 .node-text-image {
+		//@include next_step();
+		border-bottom: 4px solid white;
+	}
+}
+.solutions-device-management, .vendor-ibm-why-solution-sds {
+	.views-row-2 .node-text-image {
+		@include standard_panel_1;
+		@media (max-width:800px){
+			p{
+				text-align: center;
+				padding-left: 20px;
+				padding-right:20px;
+			}
+		}
+		.subtitle {
+			max-width: 880px;
+		}
+	}
+	.views-row-3 .node-text-image {
+		@include standard_panel_2;
+		.content {
+		    text-align: center!important;
+		    @include m-max-width(740px !important);
+		    h2 {
+		    	text-align: center!important;
+		    	margin-bottom: 35px;
+		    }
+		    p {
+		    	padding-bottom: 25px;
+		    }
+		}
+		@media (max-width:980px){
+			.content{
+				@include panel(1,1,0);
+			}
+		}
+		@media (max-width:800px){
+			p{
+				text-align: center;
+				padding-left: 20px;
+				padding-right:20px;
+			}
+		}
+	}
+	.views-row-4 .node-text-image {
+		@include panel(1, 1, 0);
+		text-align: center;
+		h2{
+			@include font-page-section-header();
+		}
+		.subtitle{
+			@include m-max-width(800px);
+		}
+		@media (max-width:1000px){
+			p{
+				text-align: center;
+				padding-left: 20px;
+				padding-right:20px;
+			}
+		}
+	}
+	.views-row-5, .views-row-6, .views-row-7, .views-row-8 {
+		.node-text-image {
+			@media (min-width:1200px) {
+				@include panel(0, 1, 0);
+				h2 {
+					padding-right: 30px;
+				}
+			}
+			@media (max-width:1200px) {
+				@include panel(1, 1, 0);
+			}
+			.text h2 {
+				text-align: left;
+			    font-size: 1.25rem;
+			    line-height: 1.675rem;
+			}
+			@media (max-width:1199px) {
+				height: auto;
+				background-size: cover !important;
+
+				.text {
+					margin-left: 10px;
+					margin-right: 10px;
+					text-align: center;
+					h2{
+						text-align: center;
+					}
+				}
+
+				.image-on-left,.image-on-right{
+					text-align: center;
+
+					img{
+						width:90%;
+						height:auto;
+					}
+				}
+			}
+			@media (min-width:1200px) {
+				.content-on-right {
+				    padding-left: 55px;
+				}
+				.content-on-left {
+				    padding-right: 55px;
+				}
+				.image-on-left {
+				    padding-left: 15px;
+				}
+				.image-on-right {
+				    padding-left: 70px;
+				}
+			}
+		}
+	}
+	.views-row-9 {
+		//@include next_step();
+		// margin-bottom:4px;
+		// border-top: 0!important;
+		// @media(max-width:980px){
+		// 	height: auto!important;
+		// }
+		// h2 {
+		//     font-size: 0.875rem!important;
+		// }
+		// h3 {
+		//     font-size: 1.875rem!important;
+		// }
+		// p {
+		// 	font-size: 1rem!important;
+		// 	&.subtitle {
+		// 		font-size: 1.125rem!important;
+		// 	}
+		// }
+	}
+	.views-row-10 {
+		height: 206px;
+		.content {
+			@include m-max-width(1070px);
+			@include clearfix();
+
+			.text {
+				padding-top: 50px;
+
+				h3 {
+					color: white;
+					width: 80%;
+					padding: 0 0 1rem 0;
+					margin: 0;
+					font-weight: 300;
+					font-size: 1.5rem;
+					height: 150px;
+					display: inline-block;
+				}
+				p {
+					width: 19%;
+					padding-left: 20px;
+					padding-top: 20px;
+					text-align: center;
+					position: absolute;
+					display: inline-block;
+				}
+			}
+		}
+		@media (max-width:1199px) {
+			height: auto !important;
+
+			.node-text-image {
+				background-size: cover !important;
+			}
+			.content {
+				.text {
+					padding-top: 50px;
+					padding-bottom: 50px;
+
+					h3, p {
+						&:before, &:after {
+							content: "";
+							display: block;
+						}
+						&:after {
+							clear: both;
+							visibility: hidden;
+						}
+						width: 90% !important;
+						float: none !important;
+						display: block;
+						text-align: center;
+						position: relative;
+						margin-left: auto;
+						margin-right: auto;
+						height:auto;
+					}
+				}
+			}
+		}
+	}
+	.views-row-11 .node-text-image {
+		@include work-with-vendors;
+		background: color(white);
+		padding-bottom: 40px!important;
+		.subtitle {
+			margin-bottom: 45px!important;
+		}
+		.col-2 {
+			h3 {
+				font-size: 1.25rem;
+			}
+			p {
+				&:nth-child(2), &:nth-child(5) {
+					padding-bottom: 8px;
+				}
+				&:nth-child(3), &:nth-child(6) {
+					padding-bottom: 45px;
+				}
+			}
+		}
+	}
+	.views-row-9 .node-text-image {
+		//@include next_step();
+	}
+	.views-row-12 .node-text-image {
+		height: 560px;
+		border-top: 3px solid white;
+	}
+}
+.page-solutions-software-defined-networking {
+	.views-row-5 {
+		.image-on-left {
+			@media(min-width:1200px){
+				top: -40px;
+			}
+		}
+	}
+}
+.solutions-device-management, .solutions-application-management, .vendor-ibm-why-solution-sds {
+	.rank-0 {
+		h1, h2 {
+			@include m-max-width(1060px);
+			text-align: center;
+		}
+	}
+}
+.solutions-content-management, .solutions-application-management {
+	.views-row-2 .node-text-image {
+		@include standard_panel_1;
+
+	}
+	.views-row-3 .node-text-image {
+		@include standard_panel_2;
+
+		@media (max-width:800px){
+			p{
+				text-align: center;
+				padding-left: 20px;
+				padding-right:20px;
+			}
+		}
+	}
+	.views-row-4 .node-text-image {
+		@include m-max-width(800px);
+		@include panel(1, 1, -1);
+		text-align: center;
+		h2{
+			@include font-page-section-header();
+		}
+		@media (max-width:800px){
+			p{
+				text-align: center;
+				padding-left: 20px;
+				padding-right:20px;
+			}
+		}
+	}
+	.views-row-5, .views-row-6, .views-row-7, .views-row-8, .views-row-9 {
+		.node-text-image {
+			@media (min-width:980px) {
+				@include panel(0, 1, 1, 1);
+			}
+			@media (max-width:979px) {
+				@include panel(1, 1, 0);
+			}
+			.text h2 {
+				text-align: left;
+			}
+			@media (max-width:979px) {
+				height: auto;
+				background-size: cover !important;
+
+				.text {
+					margin-left: 10px;
+					margin-right: 10px;
+					text-align: center;
+				}
+			}
+		}
+	}
+	.views-row-11 {
+		height: 206px;
+
+		.content {
+			@include clearfix();
+
+			.text {
+				padding-top: 50px;
+
+				h3 {
+					color: white;
+					width: 70%;
+					padding: 0 0 1rem 0;
+					margin: 0;
+					font-weight: 300;
+					font-size: 1.5rem;
+					height: 208px;
+					display: inline-block;
+				}
+				p {
+					width: 29%;
+					padding-left: 20px;
+					padding-top: 20px;
+					text-align: center;
+					position: absolute;
+					display: inline-block;
+				}
+			}
+		}
+		@media (max-width:1199px) {
+			height: auto !important;
+
+			.node-text-image {
+				background-size: cover !important;
+			}
+			.content {
+				.text {
+					padding-top: 50px;
+					padding-bottom: 50px;
+
+					h3, p {
+						&:before, &:after {
+							content: "";
+							display: block;
+						}
+						&:after {
+							clear: both;
+							visibility: hidden;
+						}
+						width: 90% !important;
+						float: none !important;
+						display: block;
+						text-align: center;
+						position: relative;
+						margin-left: auto;
+						margin-right: auto;
+						height:auto;
+					}
+				}
+			}
+		}
+	}
+	.views-row-12 .node-text-image {
+		@include work-with-vendors;
+		background-color: color(grey-lightest);
+	}
+
+	.views-row-10 .node-text-image {
+		//@include next_step();
+	}
+	.views-row-13 .node-text-image {
+		height: 560px;
+		border-top: 3px solid white;
+	}
+}
+.page-solutions-mobile-content-management{
+
+}
+
+.page-solutions-data-centre{
+	.rank-0 {
+		h1, h2 {
+			@include m-max-width(620px);
+			text-align: center;
+		}
+	}
+	.views-row-2 .node-text-image {
+		@include panel(1, 1, 0);
+		height: auto!important;
+
+		hr {
+			width: 50px;
+			margin: 48px auto;
+			border: 0;
+			border-bottom: 3px solid color(blue-lighter);
+		}
+		h2 {
+			text-align: center;
+			@include m-max-width(850px);
+			margin-bottom:1.5rem;
+		}
+		.subtitle{
+
+			@include m-max-width(850px);
+			padding-bottom: 1rem;
+		}
+		//@media (max-width:800px){
+			p{
+				text-align: center;
+				@include m-max-width(1000px);
+			}
+		//}
+	}
+	.views-row-3 .node-text-image {
+		height: 575px;
+		@include panel(1, 1, 0);
+		.content {
+			max-width: 1120px!important;
+		}
+		p {
+			@include m-max-width(960px);
+			text-align: center;
+		}
+		@media (max-width:1199px) {
+			height: auto;
+			background-size: cover !important;
+
+			.text {
+				margin-left: 10px;
+				margin-right: 10px;
+				text-align: center;
+			}
+		}
+	}
+	.views-row-4 .node-text-image {
+		@include panel(1, 1, 0);
+
+		h2 {
+			@include font-page-section-header();
+		}
+		.subtitle {
+			max-width: 880px!important;
+		}
+	}
+	.views-row-5 .node-text-image {
+		.wrapper {
+			.content, .content-on-left, .content-on-right {
+				padding: 0;
+			}
+			.subtitle {
+				max-width: 360px!important;
+			}
+		}
+		.col-4 {
+			padding: 0 !important;
+			height: 433px;
+			background: image-url("solutions-dc-p5-2.jpg") 0 0 no-repeat;
+			background-size: cover;
+
+			&:first-child {
+				background-image: image-url("solutions-dc-p5-1.jpg");
+			}
+			&:nth-child(4) {
+				background-image: image-url("solutions-dc-p5-4.jpg");
+			}
+			&:nth-child(3) {
+				background-image: image-url("solutions-dc-p5-3.jpg");
+			}
+			&:before {
+				content: '';
+				width: 100%;
+				height: 433px;
+				background-color: rgba(0, 0, 0, 0.7);
+				position: relative;
+				display: block;
+
+				@media (max-width:800px) {
+					height: 429px;
+				}
+			}
+			&:hover {
+				&:before {
+					background-color: rgba(0, 175, 215, 0.7);
+				}
+				.content {
+					a {
+						color: white
+					}
+					p.subtitle {
+						display: block;
+					}
+					h2 {
+						padding-top: 15%;
+					}
+				}
+			}
+			.content {
+				position: relative;
+				top: -433px;
+				height: 433px;
+				vertical-align: middle;
+
+				h2, p, a {
+					text-align: center;
+					max-width: 390px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				h2 {
+					padding-top: 30%;
+					font-size: 1.5rem;
+					color: white;
+				}
+				p.subtitle {
+					font-size: 1rem;
+					display: none;
+					color: white;
+				}
+			}
+			@media (max-width:800px) {
+				border-bottom: 4px solid white;
+			}
+			@media (max-width:1000px) {
+				width: 100%;
+			}
+		}
+	}
+	.views-row-6 .node-text-image {
+		@include work-with-vendors;
+	}
+	.rank-25 {
+		//@include next_step();
+		border-bottom: 4px solid white;
+	}
+}
+
+.solutions-saas{
+	.rank-0{
+		h1, h2 {
+			@include m-max-width(800px);
+			text-align: center;
+		}
+	}
+	.views-row-2 .node-text-image {
+		@include standard_panel_1;
+		background-size: contain  !important;
+		h2{
+			text-align: center;
+			font-size: 1.875rem;
+			line-height: 2.5rem;
+			font-weight: 400;
+		}
+		.subtitle{
+			@include m-max-width(1200px);
+			padding-bottom: 1rem;
+			@media(max-width:1200px){
+				padding-left:20px;
+				padding-right:20px;;
+			}
+		}
+	}
+	.views-row-3 .node-text-image {
+		@include standard_panel_2("left",560px);
+		h2{
+			font-size: 1.875rem;
+			line-height: 2.5rem;
+			font-weight: 400;
+		}
+		@media (max-width:1199px){
+			.content{
+				@include m-max-width(90%);
+			}
+			h2,p{
+				text-align: center !important;
+				padding-left: 20px;
+				padding-right:20px;
+			}
+		}
+
+	}
+	.views-row-4 .node-text-image {
+		padding-top:80px;
+		padding-bottom:80px;
+
+		h2{
+			text-align: center;
+			font-size: 1.875rem;
+			line-height: 2.5rem;
+			font-weight: 400;
+			padding-bottom:80px !important;
+			margin-bottom:0;
+		}
+		.row .col-4{
+			text-align: center;
+			font-size:1.25rem;
+			padding-top:0;
+		}
+		@media(max-width:1220px){
+			.row{
+				padding-left:20px;
+				padding-right:20px;
+				box-sizing:border-box;
+			}
+		}
+		@media(max-width:1000px){
+			.row .col-4{
+				width:50%;
+				&:nth-child(3),&:nth-child(4){
+					padding-top:80px;
+				}
+			}
+		}
+		@media(max-width:700px){
+			.row .col-4{
+				width:100%;
+				padding-top:80px;
+				&:first-child{
+					padding-top:0px;
+				}
+			}
+		}
+	}
+
+	.views-row-5 .node-text-image {
+		@include standard_panel_2("right", 560px);
+
+		h2{
+			font-size: 1.875rem;
+			line-height: 2.5rem;
+			font-weight: 400;
+		}
+		@media (max-width:1199px){
+			.content{
+				@include m-max-width(90%);
+			}
+			h2,p{
+				text-align: center !important;
+				padding-left: 20px;
+				padding-right:20px;
+			}
+		}
+	}
+	.rank-100 {
+		height: 206px;
+		background-size: cover !important;
+		.content {
+			@include m-max-width(1070px);
+			@include clearfix();
+
+			.text {
+				padding-top: 50px;
+
+				h3 {
+					color: white;
+					width: 70%;
+					padding: 0 0 1rem 0;
+					margin: 0;
+					font-weight: 300;
+					font-size: 1.5rem;
+					height: 208px;
+					display: inline-block;
+					line-height: 1.4em;
+				}
+				p {
+					width: 19%;
+					padding-left: 20px;
+					padding-top: 20px;
+					text-align: left;
+					position: absolute;
+					display: inline-block;
+				}
+			}
+		}
+		@media (max-width:1199px) {
+			height: auto !important;
+
+			.content {
+				.text {
+					padding-top: 50px;
+					padding-bottom: 50px;
+
+					h3, p {
+						&:before, &:after {
+							content: "";
+							display: block;
+						}
+						&:after {
+							clear: both;
+							visibility: hidden;
+						}
+						width: 90% !important;
+						float: none !important;
+						display: block;
+						text-align: center;
+						position: relative;
+						margin-left: auto;
+						margin-right: auto;
+						height:auto;
+					}
+				}
+			}
+		}
+	}
+	.rank-12 {
+		@include work-with-vendors;
+		background-color: color(grey-lightest);
+	}
+
+	.rank-13 {
+		height: 560px;
+		border-top: 3px solid white;
+	}
+}
+	#block-panels-mini-related-content-panel{
+		h3{
+			@include font-page-section-header;
+			text-align: center;
+		}
+	}
+.page-why-tech-data-technology-as-a-service{
+	header#header .block-menu{
+
+		ul.menu li.is-leaf.logo a{
+			background:url("/sites/all/themes/tp_theme/images/td-optimise.png") 0 0 no-repeat !important;
+		}
+		&.showHamburger{
+			ul.menu li.is-leaf.logo a{
+				background:url("/sites/all/themes/tp_theme/images/td-optimise-white.png") 0 0 no-repeat !important;
+			}
+		}
+	}
+}

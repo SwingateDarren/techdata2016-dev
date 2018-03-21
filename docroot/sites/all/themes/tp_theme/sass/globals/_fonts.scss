@@ -1,0 +1,174 @@
+$font_weight_light: 300;
+$font_weight_normal: 400;
+$font_weight_medium: 500;
+$font_weight_bold: 700;
+
+@mixin font-mpu-header {
+	font-size:2.5rem;
+	line-height: 3.375rem;
+	@if($isEditor==1){
+		color:black;
+	} else {
+		color:color(white);
+	}
+	font-weight:300;
+
+	@media (max-width:800px){
+		font-size:2rem;
+		line-height:2.25rem;
+		text-align: center;
+	}
+}
+@mixin font-mpu-subtitle {
+	font-size:1.5rem;
+	line-height: 2.25rem;
+	@if($isEditor==1){
+		color:black;
+	} else {
+		color:color(white);
+	}
+
+}
+@mixin font-page-section-header {
+	font-size:1.875rem;
+	line-height: 2.5rem;
+	font-weight:400;
+	color:color(blue-darker);
+}
+@mixin font-subtitle {
+	font-size:1.3125rem; // 21px
+	line-height: 1.875rem;
+	color:color(grey-darkest);
+	text-align: center;
+}
+@mixin font-body {
+	font-size:1rem; // 21px
+	line-height: 1.5rem;
+	color:color(grey-darkest);
+}
+
+@mixin font-h3{
+	font-size:1.5rem; // 21px
+	font-weight:$bold;
+	line-height: 2.125rem;
+	color:color(black-lighter);
+}
+@mixin font-h4{
+	font-size:1.25rem; // 21px
+	line-height: 1.75rem;
+	color:color(grey-darkest);
+}
+@mixin font-h5{
+	font-size:2.75rem; // 21px
+	line-height: 3rem;
+	font-weight: 400;
+	color:color(grey-darkest);
+	margin-bottom: 1rem;
+	@if($isEditor==1){
+		color:black;
+	} else {
+		color:color(white);
+	}
+}
+@mixin font-body-4 {
+	font-size:0.875rem; // 21px
+	line-height: 1.75rem;
+	color:color(grey-darker);
+}
+@mixin font-body-4-text {
+	font-size:0.875rem; // 21px
+	line-height: 1.75rem;
+	font-weight:$bold;
+	@if($isEditor==1){
+		color:black;
+	} else {
+		color:color(white);
+	}
+}
+@mixin font-menu {
+	font-size:1rem; // 21px
+	font-weight:$bold;
+}
+@mixin font-button-box {
+	font-size:1rem; // 21px
+	font-weight:$bold;
+	@if($isEditor==1){
+		color:black;
+	} else {
+		color:color(white);
+	}
+}
+@mixin font-button-text {
+	font-size:1rem; // 21px
+	font-weight:$bold;
+	color:color(blue-lighter);
+}
+@mixin font-form-field {
+	font-size:1rem; // 21px
+	color:color(grey-dark);
+}
+@mixin font-quote {
+	font-size:1.875rem;
+	font-style: italic;
+	line-height: 2.25rem;
+	font-weight:100;
+	text-align: center !important;
+}
+
+@mixin font-quote-by {
+	font-size:1rem;
+	font-weight: $bold;
+	line-height: 1.5rem;
+	text-align: center !important;
+}
+
+
+.font-mpu-header, .mpu-header {
+ 	@include font-mpu-header();
+}
+.font-mpu-subtitle, .mpu-subtitle {
+ 	@include font-mpu-subtitle();
+}
+
+.font-page-section-header, .page-section-header, .section-header {
+ 	@include font-page-section-header();
+}
+.font-body-subtitle, .subtitle {
+ 	@include font-subtitle();
+}
+.font-body, .body {
+ 	@include font-body();
+}
+h3 {
+ 	@include font-h3();
+}
+h4 {
+ 	@include font-h4();
+}
+h5 {
+ 	@include font-h5();
+}
+.font-body-4, .body-4 {
+ 	@include font-body-4();
+}
+.font-body-4-text, .body-4-text {
+ 	@include font-body-4-text();
+}
+.font-menu, .menu {
+ 	@include font-menu();
+}
+.font-button-box, .button-box {
+ 	@include font-button-box();
+}
+.font-button-text, .button-text {
+ 	@include font-button-text();
+}
+.font-form-field, .form-field {
+ 	@include font-form-field();
+}
+.font-quote, .quote {
+ 	@include font-quote();
+}
+.font-quote-by, .quote-by {
+ 	@include font-quote-by();
+}

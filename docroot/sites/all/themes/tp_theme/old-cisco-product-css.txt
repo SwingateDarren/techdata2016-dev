@@ -1,0 +1,88 @@
+
+.page-vendors-cisco-compute,
+.page-vendors-cisco-cisco-one-for-data,
+.page-vendors-cisco-routers,
+.page-vendors-cisco-switches,
+.page-vendors-cisco-wireless,
+.page-vendors-cisco-sdn{
+    #block-views-related-content-block {
+        display: none;
+    }
+	.rank-0 {
+		.wrapper {
+			max-width: 1050px;
+		}
+	}
+	.rank-1{
+		@include panel(1,0,0);
+	    height: 650px;
+		@media(max-width:980px){
+		    background: inherit!important;
+		    padding-bottom: 20px;
+		}
+		.content {
+		    padding-left: 35px;
+		    padding-right: 35px;
+		}
+		.col-3 {
+			@media(min-width:980px){
+			    padding-right: 100px;
+			}
+		    h2 {
+	    	    font-weight: normal;
+				font-size: 1.875rem;
+				text-align: left;
+		    }
+		}
+		.col-3wide {
+			p {
+				font-size: 1.3125rem;
+			    line-height: 1.675rem;
+			}
+		}
+	}
+	.rank-2{
+		@include panel(1,1,0);
+		background-color: color(grey-lighter);
+	    padding-left: 35px;
+	    padding-right: 35px;
+		h2 {
+		    color: color(blue-medium);
+		    font-size: 2.1875rem;
+		    font-weight: normal;
+		}
+		@media(min-width:981px){
+			h2 {
+			    margin-bottom: 15px;
+			}
+			.col-2,.col-3 {
+			    margin-top: 40px;
+				p {
+					strong {
+						font-size: 1.125rem;
+					}
+				}
+			}
+			.col-2 {
+				padding-right: 70px;
+			}
+		}
+	}
+	.rank-3{
+		@include next_step;
+		margin-bottom:4px;
+		border-top: 0!important;
+		h2 {
+		    font-size: 0.875rem!important;
+		}
+		h3 {
+		    font-size: 1.875rem!important;
+		}
+		p {
+			font-size: 1rem!important;
+			&.subtitle {
+				font-size: 1.125rem!important;
+			}
+		}
+	}
+}

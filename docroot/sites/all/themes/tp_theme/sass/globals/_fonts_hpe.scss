@@ -1,0 +1,36 @@
+$font_hpe: 'Montserrat';
+@font-face {
+  font-family: $font_hpe;
+    src: url("/sites/all/themes/tp_theme/fonts/Montserrat-Regular.otf") format("opentype");
+  font-weight: $font_weight_normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: $font_hpe;
+  src: url("/sites/all/themes/tp_theme/fonts/Montserrat-Medium.otf") format("opentype");
+  font-weight: $font_weight_medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: $font_hpe;
+  src: url("/sites/all/themes/tp_theme/fonts/Montserrat-SemiBold.otf") format("opentype");
+  font-weight: $font_weight_bold;
+  font-style: normal;
+}
+
+
+.hpe-normal{
+	font-family: 'Univers';
+	// font-family: 'Helvetica Neue Regular';
+}
+.hpe-bold{
+	font-family: 'Univers Bold';
+	// font-family: 'Helvetica Neue Bold';
+}
+.hpe-semibold{
+	font-family: $base-font-family;
+	// font-family: 'Helvetica Neue Medium';
+}
+.hpe-light	{
+	font-family: 'Univers Light';
+}

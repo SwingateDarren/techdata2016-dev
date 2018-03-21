@@ -1,0 +1,98 @@
+@font-face{
+    font-family: 'CiscoSans ExtraLight';
+    src: local("CiscoSans ExtraLight"),
+    	 url("/sites/all/themes/tp_theme/fonts/CiscoSansExtraLight.woff") format("woff");
+}
+@font-face {
+    font-family: 'CiscoSans Regular';
+    src: local("CiscoSans Regular"),
+    	 url("/sites/all/themes/tp_theme/fonts/CiscoSans.woff") format("woff");
+}
+@font-face {
+    font-family: 'CiscoSans Bold';
+    src: local("CiscoSans Bold"),
+         url('/sites/all/themes/tp_theme/fonts/CiscoSans-Bold.woff') format("woff");
+}
+
+
+@mixin cisco-normal{
+	font-family: 'CiscoSans ExtraLight', Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin cisco-bold{
+	font-family: 'CiscoSans Bold', Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin vendor-cisco{
+	h1,h2,h3,h4,h5,p {
+		@include cisco-normal;
+	}
+	h2,h3,h4,h5,p {
+		color: color(cisco-grey-dark);
+	}
+	h1{
+		// font-size:2.125rem;
+		// font-weight: 300;
+		// line-height: 2.75rem;
+	}
+	h2{
+		// font-size:2.1875rem;
+		// font-weight: 400;
+		// line-height: 2.5rem;
+		// @extend .cisco-bold;
+	}
+	h3{
+		// font-size:1.5rem;
+		// font-weight: 400;
+		// line-height: 1.875rem;
+	}
+	.font-mpu-header, .mpu-header{
+	}
+	.font-mpu-subtitle, .mpu-subtitle, {
+	}
+	.font-page-section-header, .page-section-header, .section-header, h2.section-header {
+	}
+	.font-body-subtitle, .subtitle {
+	}
+	.font-body, .body,p {
+	}
+	.font-body-4, .body-4 {
+	}
+	.font-body-4-text, .body-4-text {
+	}
+	.font-menu, .menu {
+	}
+	.font-button-box, .button-box {
+	}
+	.font-button-text, .button-text, .button-link {
+		@include cisco-bold;
+		// font-weight:500;
+		// font-size: 1rem;
+	}
+	.button-primary, .button-light, .button-white, .button{
+		@include cisco-bold;
+		// font-weight:500;
+		// font-size: 1rem;
+	}
+	.font-form-field, .form-field {
+	}
+	.font-quote, .quote {
+	}
+	.font-quote-by, .quote-by {
+	}
+}
+
+
+.cisco-normal{
+	@include cisco-normal;
+}
+.cisco-bold{
+	@include cisco-bold;
+}
+
+.vendor-cisco{
+	@include vendor-cisco;
+}

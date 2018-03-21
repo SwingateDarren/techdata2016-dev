@@ -1,0 +1,37 @@
+#page{
+	&.visitor-general{
+		.menu li{
+			&.for-visitor-publisher,
+			&.for-visitor-marketer{
+				display: none;
+			}
+		} 
+	}
+	&.visitor-publisher{
+		.menu li{
+			&.for-visitor-general,
+			&.for-visitor-marketer{
+				display: none;
+			}
+		} 
+		@media (max-width: 1024px) {
+			header h2{
+				margin-top: 50px;
+				padding-left: 4%;
+				padding-right: 4%;
+			}
+			.node-content-container p{
+				padding-left: 4%;
+				padding-right: 4%;
+			}
+		}
+	}
+	&.visitor-marketer{
+		.menu li{
+			&.for-visitor-publisher,
+			&.for-visitor-general{
+				display: none;
+			}
+		} 
+	}
+}

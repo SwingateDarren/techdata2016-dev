@@ -1,0 +1,700 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"marign-",
+				"margin-right"
+			],
+			[
+				"content",
+				"content-text"
+			],
+			[
+				"background-",
+				"background-size"
+			],
+			[
+				"imprt",
+				"important"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"marign",
+				"margin-left"
+			],
+			[
+				"padding-",
+				"padding-left"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"BACKG",
+				"background-color"
+			],
+			[
+				"return",
+				"returnData"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/css/website-2017-styles.css",
+			"settings":
+			{
+				"buffer_size": 46920,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_icons.scss",
+			"settings":
+			{
+				"buffer_size": 910,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_core.scss",
+			"settings":
+			{
+				"buffer_size": 4709,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_text.scss",
+			"settings":
+			{
+				"buffer_size": 1081,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_related-products-widget.scss",
+			"settings":
+			{
+				"buffer_size": 705,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_jobs.scss",
+			"settings":
+			{
+				"buffer_size": 757,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/scripts/src/jobs.js",
+			"settings":
+			{
+				"buffer_size": 172,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/scripts/build/script.gen.js",
+			"settings":
+			{
+				"buffer_size": 15089,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pac",
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Upgrade Package"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017"
+	],
+	"file_history":
+	[
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/website-2017-styles.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_text.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_quote.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_core.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_navigation.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_location.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_slider.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_defaults.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_mpu-widget.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/scripts/src/hamburger.js",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_header.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_cta.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_client-widget.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/scripts/build/script.gen.js",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_next-and-previous-widget.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_text-columns.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_related-products-widget.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_bullet-list.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/scripts/src/bullet-list.js",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/gulpfile.js",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/scripts/src/slider.js",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_button-widget.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_wrapper.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_footer.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/mpu-widget.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_forms.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/css/website-2017-styles.css",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/scripts/src/videoManager.js",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_icons.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/scripts/src/form-focus.js",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_form.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_solution-list.scss",
+		"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_product-list.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_solutions.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_vendor_cisco.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/vendor-motorola-en-gb.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/globals/_variables.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/globals/_mixins.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_i-need-to.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_vendor_motorola.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/globals/_fonts_motorola.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/globals/_footer.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_vendor_microsoft.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_vendor_default.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/globals/_fonts_ibm.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_homepage.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/globals/_common_panels.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/widgets/_text_and_image.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_why-tech-data.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/globals/_init.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/vendor-ibm-en-gb.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/widgets/_mpu-banner-carousel.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/globals/_header.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/widgets/_newsletter.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/widgets/_cta_x_3.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_blog-backup.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/widgets/_eu-compliance.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_search.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_blog.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/css/styles-en-gb.css",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/globals/_fonts_cisco.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/globals/_fonts_oracle.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/widgets/_activeTabs.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_resources-backup.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/globals/_core.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_resources.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/templates/node--view--resources-page.tpl.php",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/css/vendor-cisco-en-gb.css",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/css/vendor-motorola-en-gb.css",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_vendor_hpe.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/Gruntfile.js",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/css/vendor-ibm-en-gb.css",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/vendor-oracle-en-gb.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/globals/_fonts_microsoft.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_vendor_oracle.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_vendor_ibm.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/templates/node--blog-post.tpl.php",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/vendor-hpe-new-en-gb.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/vendor-hpe-en-gb.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/vendor-microsoft-en-gb.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/globals/_fonts.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/vendor-cisco-en-gb.scss",
+		"/Users/adrainsweeney/Development/resources/TD-HPE/html.html",
+		"/Users/adrainsweeney/Development/resources/TD-HPE/structure",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/templates/node--text-image.tpl.php",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/template.php",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_ms_welcome_pack.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/widgets/_social-share.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/gulpfile.js",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/templates/html.tpl.php",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/layouts/_init.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/package.json",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/sass/editor.en.scss",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/compiled_css/styles-en-gb.css",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/default/settings.php",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/all/themes/tp_theme/templates/page.tpl.php",
+		"/Users/adrainsweeney/Development/sites/techdata2016/docroot/sites/default/settings.local.php",
+		"/Users/adrainsweeney/Development/TomorrwoPeople2017.sublime-workspace",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/write-for-us.scss",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/lp-2017-ror-calculator.scss",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/onboarding.scss",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/our-services.scss",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/structure.scss",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/what-we-do.scss",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/why-us.scss",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/about-us.scss",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/blog-level-1.scss",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/blog-level-2.scss",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/contact.scss",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/contento.scss",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/customer-level-1.scss",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/customer-level-2.scss",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/homepage.scss",
+		"/Users/adrainsweeney/Development/sites/tomorrowPeople2017/sass/globals/_core.scss",
+		"/Users/adrainsweeney/Development/sites/ContentoApi/app/routes/user.js",
+		"/Users/adrainsweeney/Development/sites/ContentoApi/app/routes/channels.js",
+		"/Users/adrainsweeney/Development/sites/preciseTV/html/landing-page-2017.html",
+		"/Users/adrainsweeney/Development/sites/ContentoApi/app/routes/clients.js",
+		"/Users/adrainsweeney/Development/apps/ios/contento/Contento/Soak_Assets.xcassets/Contents.json"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+			"/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\t\t\t}",
+			"jobs__item",
+			"--no-direction-nav",
+			"slider",
+			"mpu",
+			"$WHITE",
+			"color(white)",
+			"COLOR"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$white",
+			"$WHITE"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/css/website-2017-styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 46920,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 255099.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_icons.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 910,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								814,
+								814
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_core.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4709,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_text.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1081,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								181,
+								181
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_related-products-widget.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								127,
+								127
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/sass/widgets/_jobs.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 757,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								727,
+								727
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/scripts/src/jobs.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 172,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								150,
+								150
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/adrainsweeney/Development/sites/T-Three-website-2017/scripts/build/script.gen.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15089,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "T-Three.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 256.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

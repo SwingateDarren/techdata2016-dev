@@ -1,0 +1,155 @@
+
+form{
+	padding: 0px !important;
+	@media (max-width:800px){
+		padding-left:20px !important;
+		padding-right:20px !important;
+	}
+	.field{
+		@media (min-width:801px){
+			width:49%; 
+			float:left;
+		}
+		box-sizing:border-box;
+		margin: 5px 0.5% !important;
+		.hs-input {
+			max-width:100%;
+			margin:0;
+		}
+		&.hs-form-field{
+			label {display:none !important}
+			.input{
+				width: 100% !important;
+				box-sizing: border-box !important;
+				input {
+					width: 100% !important;
+					box-sizing: border-box !important;
+					border: 1px solid #000 !important;
+					background: white !important;
+					padding: 24px 5px 24px 5px !important;
+					border-radius:0;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 11px;
+				}
+			}
+			&.hs_page_section{
+				width:100%!important;
+				float:none!important;
+				select{
+					width: 100% !important;
+					box-sizing: border-box !important;
+					border: 1px solid #000 !important;
+					background:url(/sites/all/themes/tp_theme/images/dropdown-black.png) 99% 50% no-repeat;
+					background-color: white !important;
+					height:50px !important;
+					border-radius:0;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 11px;
+					max-width:99%;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					appearance: none;
+					color:#666;
+					&::-ms-extend{
+						 display: none;
+					}
+
+				}
+			}
+		}
+		&.hs_message{
+			width:100% !important;
+			float:none !important;
+			clear:both;
+			textarea{
+				width: 96.5%;
+				@media (max-width:800px){
+					width: 95%;
+				}
+				border: 1px solid #000 !important;
+				height: 110px;
+				margin-top:5px;
+				border-radius:0;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 11px;
+				float:none !important;
+			}
+		}
+	}
+	.hs-error-msgs.inputs-list{
+		label{
+			display:block !important;
+			color:white !important;
+		}
+	}
+	.hs_submit{
+		.actions{
+			margin: 0px !important;
+			padding: 0px !important
+		}
+		input[type='submit']{
+    text-transform: uppercase;
+			@include button(color(blue-medium), white, color(blue-medium), 
+				color(grey-darker), white, color(grey-darker), 25px, 20px, 5px);
+		}
+	}
+}
+
+.hs-form.stacked.hs-form-private .hs-button:active:not(.inactive):not(.link), 
+.hs-form.stacked.hs-form-private .hs-button.depressed:not(.inactive):not(.link), 
+.hs-form.stacked.hs-form-private .hs-button:not(.inactive):not(.link) {
+    background-color:color(blue-dark) !important;
+    background-image:none !important;
+    box-shadow:none !important;
+    border:0px !important;
+    text-transform: uppercase;
+    @include button(color(blue-medium), white, color(blue-medium), 
+				color(grey-darker), white, color(grey-darker), 25px, 20px, 5px);
+}
+
+// <form  class="hs-form stacked hs-form-private hs-form-8071453c-8218-4e8c-b571-6375a0994a3f_ef6adbbc-b65a-43a5-991d-18dbef5d2e96" data-form-id="8071453c-8218-4e8c-b571-6375a0994a3f" data-portal-id="2628398" target="target_iframe_8071453c-8218-4e8c-b571-6375a0994a3f" data-reactid=".hbspt-forms-0"><div class="hs_firstname field hs-form-field" data-reactid=".hbspt-forms-0.0:$0"><label id="label-firstname-8071453c-8218-4e8c-b571-6375a0994a3f" class="" placeholder="Enter your First Name" for="firstname-8071453c-8218-4e8c-b571-6375a0994a3f" data-reactid=".hbspt-forms-0.0:$0.0"><span data-reactid=".hbspt-forms-0.0:$0.0.0">First Name</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$0.0.1">*</span></label><legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$0.1"></legend><div class="input" data-reactid=".hbspt-forms-0.0:$0.$firstname"><input id="firstname-8071453c-8218-4e8c-b571-6375a0994a3f" class="hs-input" type="text" name="firstname" required="" value="" placeholder="First Name" data-reactid=".hbspt-forms-0.0:$0.$firstname.0" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=);"></div></div><div class="hs_lastname field hs-form-field" data-reactid=".hbspt-forms-0.0:$1"><label id="label-lastname-8071453c-8218-4e8c-b571-6375a0994a3f" class="" placeholder="Enter your Last Name" for="lastname-8071453c-8218-4e8c-b571-6375a0994a3f" data-reactid=".hbspt-forms-0.0:$1.0"><span data-reactid=".hbspt-forms-0.0:$1.0.0">Last Name</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$1.0.1">*</span></label><legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$1.1"></legend><div class="input" data-reactid=".hbspt-forms-0.0:$1.$lastname"><input id="lastname-8071453c-8218-4e8c-b571-6375a0994a3f" class="hs-input" type="text" name="lastname" required="" value="" placeholder="Last Name" data-reactid=".hbspt-forms-0.0:$1.$lastname.0"></div></div><div class="hs_email field hs-form-field" data-reactid=".hbspt-forms-0.0:$2"><label id="label-email-8071453c-8218-4e8c-b571-6375a0994a3f" class="" placeholder="Enter your Email" for="email-8071453c-8218-4e8c-b571-6375a0994a3f" data-reactid=".hbspt-forms-0.0:$2.0"><span data-reactid=".hbspt-forms-0.0:$2.0.0">Email</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$2.0.1">*</span></label><legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$2.1"></legend><div class="input" data-reactid=".hbspt-forms-0.0:$2.$email"><input id="email-8071453c-8218-4e8c-b571-6375a0994a3f" class="hs-input" type="email" name="email" required="" placeholder="Email" value="" data-reactid=".hbspt-forms-0.0:$2.$email.0"></div></div><div class="hs_company field hs-form-field" data-reactid=".hbspt-forms-0.0:$3"><label id="label-company-8071453c-8218-4e8c-b571-6375a0994a3f" class="" placeholder="Enter your Company Name" for="company-8071453c-8218-4e8c-b571-6375a0994a3f" data-reactid=".hbspt-forms-0.0:$3.0"><span data-reactid=".hbspt-forms-0.0:$3.0.0">Company Name</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$3.0.1">*</span></label><legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$3.1"></legend><div class="input" data-reactid=".hbspt-forms-0.0:$3.$company"><input id="company-8071453c-8218-4e8c-b571-6375a0994a3f" class="hs-input" type="text" name="company" required="" value="" placeholder="Company Name" data-reactid=".hbspt-forms-0.0:$3.$company.0"></div></div><div class="hs_message field hs-form-field" data-reactid=".hbspt-forms-0.0:$4"><label id="label-message-8071453c-8218-4e8c-b571-6375a0994a3f" class="" placeholder="Enter your Message" for="message-8071453c-8218-4e8c-b571-6375a0994a3f" data-reactid=".hbspt-forms-0.0:$4.0"><span data-reactid=".hbspt-forms-0.0:$4.0.0">Message</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$4.0.1">*</span></label><legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$4.1"></legend><div class="input" data-reactid=".hbspt-forms-0.0:$4.$message"><textarea id="message-8071453c-8218-4e8c-b571-6375a0994a3f" class="hs-input" name="message" required="" placeholder="Message" data-reactid=".hbspt-forms-0.0:$4.$message.0"></textarea></div></div><div class="hs_submit" data-reactid=".hbspt-forms-0.3"><div class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.3.0"></div><div class="actions" data-reactid=".hbspt-forms-0.3.1"><input type="submit" value="Send Message" class="hs-button primary large" data-reactid=".hbspt-forms-0.3.1.0"></div></div><input name="hs_context" type="hidden" value="{&quot;rumScriptExecuteTime&quot;:8173,&quot;rumServiceResponseTime&quot;:11560,&quot;rumFormRenderTime&quot;:2771,&quot;rumTotalRenderTime&quot;:11566,&quot;rumTotalRequestTime&quot;:2753,&quot;pageUrl&quot;:&quot;http://en-gb.techdata-local.tp-demo.co.uk/contact-us&quot;,&quot;pageTitle&quot;:&quot;Contact our trusted advisors | TechData&quot;,&quot;source&quot;:&quot;FormsNext-static-1.749&quot;,&quot;timestamp&quot;:1517227407372,&quot;userAgent&quot;:&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0.3 Safari/604.5.6&quot;,&quot;referrer&quot;:&quot;http://en-gb.techdata-local.tp-demo.co.uk/contact-us&quot;,&quot;hutk&quot;:{},&quot;originalEmbedContext&quot;:{&quot;portalId&quot;:&quot;2628398&quot;,&quot;formId&quot;:&quot;8071453c-8218-4e8c-b571-6375a0994a3f&quot;,&quot;target&quot;:&quot;#hbspt-form-1517227406635-2644847663&quot;,&quot;redirectUrl&quot;:&quot;&quot;,&quot;inlineMessage&quot;:&quot;Thanks for submitting the form.&quot;},&quot;recentFieldsCookie&quot;:{},&quot;boolCheckBoxFields&quot;:&quot;&quot;,&quot;dateFields&quot;:&quot;&quot;,&quot;redirectUrl&quot;:&quot;&quot;,&quot;smartFields&quot;:{},&quot;urlParams&quot;:{},&quot;formValidity&quot;:{},&quot;formTarget&quot;:&quot;#hbspt-form-1517227406635-2644847663&quot;,&quot;correlationId&quot;:&quot;2edd6ebf-4012-4943-a9a7-b61c8e14da48&quot;,&quot;disableCookieSubmission&quot;:false,&quot;usingInvisibleRecaptcha&quot;:false,&quot;isFallback&quot;:false}" data-reactid=".hbspt-forms-0.4"><iframe name="target_iframe_8071453c-8218-4e8c-b571-6375a0994a3f" style="display:none;" data-reactid=".hbspt-forms-0.5"></iframe></form>
+
+.node-form-panel{
+	padding-top: $panelTopHeight;
+	padding-bottom: $panelBottomHeight;
+	padding-left: 20px;
+	padding-right: 20px;
+	&.form-panel--default{
+		background-color:color(blue-lighter);
+	}
+	
+	&.isLightText {
+		color: color(white);
+
+		p, h1, h3, h4, h2 {
+			color: color(white);
+		}
+	}
+	&.isContained{
+		.wrapper{
+			@include m-max-width(1200px);
+			h2{
+				font-size: 1.875rem;
+				line-height: 2.5rem;
+				font-weight: 400;
+			}
+		}
+	}
+	form{
+		@include m-max-width(1000px);
+		.field.hs_message textarea{
+			width: 98%;
+		}
+	}
+	.body{
+		@include m-max-width(850px);
+		margin-bottom:20px;
+	}
+}
+
+a.talk-to-us{
+	margin-top:20px !important;
+}

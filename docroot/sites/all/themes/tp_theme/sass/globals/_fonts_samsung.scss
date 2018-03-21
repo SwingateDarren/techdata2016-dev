@@ -1,0 +1,185 @@
+
+@font-face {
+    font-family: 'SamsungSharpSans-Bold';
+    src: local('☺'),
+    	 url("/sites/all/themes/tp_theme/fonts/SamsungSharpSans-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'SamsungSharpSans-Medium';
+    src: local('☺'),
+    	 url("/sites/all/themes/tp_theme/fonts/SamsungSharpSans-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'SamsungSharpSans-Regular';
+    src: local('☺'),
+    	 url("/sites/all/themes/tp_theme/fonts/SamsungSharpSans-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'SamsungOne-400';
+    src: local('☺'),
+         url('/sites/all/themes/tp_theme/fonts/SamsungOne-400_v1.0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SamsungOne-800';
+    src: local('☺'),
+         url('/sites/all/themes/tp_theme/fonts/SamsungOne-800_v1.0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin samsung-normal(){
+	font-family: 'SamsungSharpSans-Regular', Helvetica, sans-serif;
+	// font-weight:400;
+}
+@mixin samsung-bold(){
+	font-family: 'SamsungSharpSans-Bold', Helvetica, sans-serif;
+	// font-weight:800;
+}
+@mixin samsung-semibold(){
+	font-family: 'SamsungSharpSans-Medium', Helvetica, sans-serif;
+	// font-weight:500;
+}
+@mixin samsung-light()	{
+	font-family: 'SamsungSharpSans-Regular', Helvetica, sans-serif;
+	// font-weight:400;
+}
+@mixin samsung-default(){
+	font-family: 'SamsungOne-400', Helvetica, sans-serif;
+	// font-weight:400;
+}
+@mixin samsung-default-bold(){
+	font-family: 'SamsungOne-800', Helvetica, sans-serif;
+	// font-weight:400;
+}
+
+.samsung-normal{
+	@include samsung-normal();
+}
+.samsung-bold{
+	@include samsung-bold();
+}
+.samsung-semibold{
+	@include samsung-semibold();
+}
+.samsung-light	{
+	@include samsung-light();
+}
+
+
+.vendors-samsung{
+	h2,h3,h4,h5 {
+		@include samsung-normal;
+		line-height:1.2em;
+	}
+	h2,h3,h4,h5,p {
+		color: #000000;
+		line-height:1.2em;
+	}
+	h1{
+		font-size:2.8125rem;
+		font-weight: 300;
+		line-height: 2.75rem;
+		@media(max-width:1000px){
+			font-size:2.125rem;
+		}
+	}
+	h2{
+		font-size:2.8125rem;
+		font-weight: 400;
+		line-height: 2.5rem;
+		@include samsung-bold;
+		@media(max-width:1000px){
+			font-size:2.125rem;
+		}
+	}
+	h3{
+		font-size:1.5rem;
+		font-weight: 400;
+		line-height: 1.875rem;
+	}
+	.next-step-panel {
+		.content {
+			background-color:#222425 !important;
+			h2{
+				@include samsung-default();
+				font-size:0.875rem;
+			}
+			h3.section-header{
+				@include samsung-default-bold();
+				font-size:1.875rem;
+			}
+			p{
+				@include samsung-default();
+				font-size:1.125rem;
+			}
+			.button-light{
+				text-transform:uppercase;
+			    @include samsung-default-bold();
+			}
+		}
+	}
+	.font-mpu-header, .mpu-header{
+		@include samsung-bold();
+		font-size:2.8125rem;
+		line-height:1.2em;
+		img{
+			margin-bottom:1rem;
+			max-width:90%;
+			height:auto !important;
+		}
+		color: #000000;
+
+		@media(max-width:1000px){
+			font-size:1.75rem;
+		}
+
+	}
+	.font-mpu-subtitle, .mpu-subtitle, {
+		color: #000000;
+	}
+	.font-page-section-header, .page-section-header, .section-header, h2.section-header {
+		@include samsung-bold();
+		font-size:2.8125rem;
+		line-height:1.2em;
+		color: #000000;
+		@media(max-width:1000px){
+			font-size:1.75rem;
+		}
+	}
+	.font-body-subtitle, .subtitle {
+		@include samsung-default();
+		font-size:1.125rem;
+		line-height:1.2em;
+		color: #000000;
+	}
+	.font-body, .body,p {
+		@include samsung-default();
+
+	}
+	.font-body-4, .body-4 {
+	}
+	.font-body-4-text, .body-4-text {
+	}
+	.font-menu, .menu {
+	}
+	.font-button-box, .button-box {
+	}
+	.font-button-text, .button-text, .button-link {
+		@include samsung-bold;
+		font-size: 1rem;
+	}
+	.button-primary, .button-light, .button-primary-small, .button-light-small, .button-white{
+		@include samsung-bold;
+		font-size: 1rem;
+		background-color:#227acb !important;
+		border-color:#227acb !important;
+	}
+	.font-form-field, .form-field {
+	}
+	.font-quote, .quote {
+	}
+	.font-quote-by, .quote-by {
+	}
+}

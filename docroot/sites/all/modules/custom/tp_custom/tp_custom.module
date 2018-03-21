@@ -1,0 +1,11 @@
+<?php
+// Trusted Advisor from TechData
+// KEY :: JRTK6NAX2QQSHOBUXY
+// Client secret :: LBFRLNYVT3S7AT6DHEZD35D75NJHG4WBLM7NGVO4IY4W7RUCB2
+// Your personal OAuth token :: FPMOK2VR6L24NIH4BH5Z
+// Anonymous access OAuth token :: VBQKGZAZPQ5PYBA7IM2J
+
+
+function tp_custom_query_random_alter($query){
+  $query->orderRandom();
+}

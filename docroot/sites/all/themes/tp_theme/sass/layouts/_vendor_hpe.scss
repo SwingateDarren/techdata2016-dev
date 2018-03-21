@@ -1,0 +1,824 @@
+// .page-vendors-hpe-new {
+.hpe-v2 {
+
+  .node-text-image .wrapper {
+    position: relative;
+  }
+  @mixin narrow_text() {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  .section-header,
+  .mpu-header {
+    font-family: $font_hpe;
+    font-weight: $font_weight_bold;
+    line-height: 1.3em;
+    margin-bottom: 30px;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    color: color(grey-darkest);
+  }
+
+  .subtitle {
+    font-size: 1.15rem;
+    @include narrow_text;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    margin-left: 1em;
+    margin-bottom: 16px;
+    li {
+      margin-bottom: 1rem;
+      line-height: 1.5em;
+    }
+  }
+
+  .section-header {
+    font-size: 2rem;
+  }
+
+  .mpu-header {
+    text-align: center;
+    @include narrow_text;
+  }
+
+  .node-text-image:not(.rank-0):not(.next-step-panel):not(.rank-100):not(.footer-banner) {
+      @include panel(1, 1, -1);
+  }
+
+  .disablePaddingBottom {
+    padding-bottom: 0 !important;
+  }
+
+  .button-primary {
+    border-radius: 0;
+    background-color: color(hpe-green) !important;
+    border: none !important;
+    padding: 16px 24px !important;
+    &:hover {
+      border: none !important;
+      background-color: rgba(color(hpe-green), 0.8) !important;
+    }
+  }
+
+  .displayImageAtBottom {
+    .text {
+      max-width: $main-max-width;
+    }
+
+    .image-at-bottom {
+      margin: 50px auto 0;
+      img {
+        display: block;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .image-on-right {
+    img {
+      display: block;
+    }
+  }
+
+  @mixin hpe_arrow-link {
+    background-image: url('../images/hpe-right-arrow.png');
+    background-repeat: no-repeat;
+    background-position: left 1px;
+    color: color(hpe-green);
+    text-decoration: none;
+    padding-left: 25px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .hpe-products-grid {
+    text-align: center;
+    margin-top: 40px;
+
+    p,
+    h3 {
+      max-width: calc(100% - 20px);
+      margin: 0 auto;
+    }
+
+    p:first-child {
+      border: 1px solid color(hpe-light-grey);
+      height: 150px;
+      display: flex;
+      >img {
+        flex: 0 0 auto;
+      }
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 0;
+      @media (max-width: 980px) {
+        display: none;
+      }
+    }
+
+    h3 {
+      margin: 10px auto;
+      span {
+        display: block;
+        font-size: 0.6em;
+        line-height: 1.3em;
+      }
+    }
+
+
+    a {
+      @include hpe_arrow-link;
+    }
+  }
+
+  .hpe-support-training {
+    margin-top: 40px;
+    h3 {
+      padding-left: 10px;
+      img {
+        transform: translateX(-10px) translateY(10px);
+      }
+    }
+
+    a {
+      @include hpe_arrow-link;
+    }
+  }
+
+
+  .hpe-solutions-grid {
+
+    margin-top: 40px;
+    h3 {
+      padding-left: 10px;
+      img {
+        transform: translateX(-10px) translateY(10px);
+      }
+    }
+
+    a {
+      @include hpe_arrow-link;
+    }
+  }
+
+  .hpe-team-grid {
+    margin-top: 20px;
+    .col-4 {
+      margin-bottom: 20px;
+    }
+    p:first-child {
+      border-bottom: 2px solid color(hpe-green);
+      padding-bottom: 5px;
+      width: auto;
+      display: inline-block;
+    }
+
+    h3 {
+      margin: 10px 0 0;
+    }
+
+    a {
+      color: color(hpe-green);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .hpe-blue-grey {
+    background-color: color(hpe-grey);
+
+    h3 {
+      margin-bottom: 40px;
+    }
+
+    .row {
+      margin-top: 20px;
+      &:first-of-type {
+        margin-top: 40px;
+      }
+    }
+
+    .row {
+      h3 {
+        margin-bottom: 20px;
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .HasRenderImageAsBackground {
+    height: 560px;
+    .isBackgroundEnabled {
+      top: 0;
+    }
+
+    .content-on-right {
+      max-width: 600px;
+      padding-left: 50px;
+      text-align: left;
+    }
+  }
+
+  .hpe-light-grey {
+    background-color: color(hpe-light-grey);
+
+
+    h3 {
+      margin-bottom: 40px;
+    }
+
+    .row {
+      margin-top: 40px;
+    }
+  }
+
+  #block-panels-mini-related-content-panel {
+    .view-content>.text {
+      text-align: center;
+    }
+
+    background-color: color(white);
+
+    &.hpe-light-grey {
+      background-color: color(hpe-light-grey);
+    }
+
+    .node-blog-post,
+    .node-resource {
+      background-color: transparent;
+      .hpe-light-grey & {
+        background-color: color(hpe-light-grey) !important;
+      }
+      .type {
+        font-family: $font_hpe;
+        font-weight: $font_weight_medium;
+        background-color: color(hpe-green) !important;
+        &::before {
+          border-color: transparent transparent color(hpe-green) transparent !important;
+        }
+        &::after {
+          border-color: color(hpe-green) transparent transparent transparent !important;
+        }
+      }
+
+      .wrapper {
+        background-color: color(grey-lighter);
+      }
+    }
+    div.view-header {
+      margin-bottom: 21px;
+    }
+  }
+
+  .hpe-cta-banner {
+    background-size: cover !important;
+    .text {
+      text-align: center;
+      @include narrow_text;
+    }
+  }
+
+  .footer-banner,
+  .hpe-footer-banner {
+    background: color(hpe-grey);
+    height: auto;
+    padding: 65px 0 30px;
+    @media(min-width: 1000px) {
+      height: 206px;
+      padding: 0;
+      .text {
+        height: 206px;
+      }
+    }
+    .content {
+      padding: 0;
+    }
+    .wrapper {
+      max-width: 1200px;
+    }
+    h3 {
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 20px 20px;
+      font-size: 1.7rem;
+      @media(min-width: 1000px) {
+        text-align: left;
+        width: 80%;
+      }
+      @media(max-width:999px) {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+      }
+
+      @media (max-width: 999px) {
+        margin-bottom: 20px !important;
+      }
+    }
+    p {
+      text-align: center;
+      padding: 0 20px 20px;
+      @media(min-width: 1000px) {
+        width: 20%;
+      }
+    }
+    @media(min-width:1000px) {
+      h3,
+      p {
+        padding: 0;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: relative;
+        float: left;
+      }
+    }
+  }
+}
+
+// }
+.node-5301 {
+  .row {
+    .col-4 {
+      p:first-child {
+        height: 100px;
+      }
+      h3 {
+        height: 60px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.hpe-v2 {
+  .node-5221 {
+    padding-top: 0 !important;
+  }
+}
+
+.page-vendors-hpe-products-aruba,.page-vendors-hpe-new-products-aruba {
+  .rank-10 {
+    background-size: cover!important;    
+    .cog {    
+      float: left;
+      padding-right: 15px;
+      padding-bottom: 0px;
+      margin-top: -3px;
+      img {
+        display: block;
+      }
+    }
+  }
+}
+
+
+.page-vendors-hpe-products-oneview,
+.page-vendors-hpe-products-oneview-for-vmware,
+.page-vendors-hpe-products-synergy,
+.page-vendors-hpe-products-hyper-converged,
+.page-vendors-hpe-products-store-virtual-vsa,
+.page-vendors-hpe-products-aruba,
+.page-vendors-hpe-products-3par {
+  .hpe-v1 {
+    .rank-0 {
+      .wrapper {
+        max-width: 1050px;
+      }
+    }
+    .rank-1 {
+      @include panel(1,0,0);
+      height: 650px;
+      @media(max-width: 980px) {
+        background: inherit!important;
+        padding-bottom: 20px;
+      }
+      .content {
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+      .col-3 {
+        @media(min-width: 980px) {
+          padding-right: 110px;
+        }
+        h2 {
+          font-weight: normal;
+          font-size: 1.875rem;
+          text-align: left;
+        }
+      }
+      .col-3wide {
+        p {
+          font-size: 1.3125rem;
+          line-height: 1.675rem;
+        }
+      }
+    }
+    .rank-2 {
+      @include panel(1,
+      1,
+      0);
+      background-color: color(grey-lighter);
+      padding-left: 35px;
+      padding-right: 35px;
+      h2 {
+        color: color(blue-medium);
+        font-size: 2.1875rem;
+        font-weight: normal;
+      }
+      @media(min-width:981px) {
+        h2 {
+          margin-bottom: 15px;
+        }
+        .col-2,
+        .col-3 {
+          margin-top: 40px;
+          p {
+            strong {
+              font-size: 1.125rem;
+            }
+          }
+        }
+        .col-2 {
+          padding-right: 70px;
+        }
+      }
+    }
+    .rank-3 {
+      @include panel(1,
+      1,
+      1);
+      .col-3 {
+        @media(min-width: 800px) {
+          max-width: 280px;
+        }
+        h2 {
+          text-align: left;
+          font-weight: normal;
+          font-size: 1.875rem;
+        }
+      }
+      .col-3wide {
+        h3 {
+          color: color(blue-darker);
+          margin-top: 40px;
+          margin-bottom: 20px;
+        }
+        p {
+          padding-bottom: 35px;
+        }
+      }
+    }
+    .rank-4 {
+      @include next_step();
+      margin-bottom: 4px;
+      border-top: 0!important;
+      h2 {
+        font-size: 0.875rem!important;
+      }
+      h3 {
+        font-size: 1.875rem!important;
+      }
+      p {
+        font-size: 1rem!important;
+        &.subtitle {
+          font-size: 1.125rem!important;
+        }
+      }
+    }
+  }
+}
+.page-vendors-hpe-new-products-aruba {
+  .hpe-v1 {
+    .rank-10 {
+      background-size: cover!important;    
+      .cog {    
+        float: left;
+        padding-right: 15px;
+        padding-bottom: 0px;
+        margin-top: -3px;
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.page-vendors-hpe-products-aruba {
+  .hpe-v1 {
+    .rank-1 {
+      height: 700px;
+    }
+    .rank-10 {
+      background-size: cover!important;    
+      .cog {    
+        float: left;
+        padding-right: 15px;
+        padding-bottom: 0px;
+        margin-top: -3px;
+        img {
+          display: block;
+        }
+      }
+    }
+    .footer-banner {
+      height: auto;
+      padding: 65px 0 30px;
+      @media(min-width: 1000px) {
+        height: 206px;
+        padding: 0;
+        .text {
+          height: 206px;
+        }
+      }
+      .content {
+        padding: 0;
+      }
+      .wrapper {
+        @include m-max-width(1200px);
+        height: inherit;
+      }
+      h3 {
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 20px 20px;
+        line-height: 2.825rem;
+        @media(min-width: 1000px) {
+          text-align: left;
+          width: 70%;
+        }
+        @media(max-width:999px) {
+          font-size: 1.5rem;
+          line-height: 1.75rem;
+        }
+      }
+      p {
+        text-align: center;
+        padding: 0 20px 20px;
+        @media(min-width: 1000px) {
+          width: 30%;
+        }
+      }
+      @media(min-width:1000px) {
+        h3,
+        p {
+          padding: 0;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          position: relative;
+          float: left;
+        }
+      }
+    }
+  }
+}
+
+.page-vendors-hpe-solutions {
+  .hpe-v1 {
+    .rank-0 {
+      .wrapper {
+        max-width: 1050px;
+      }
+    }
+    .rank-1 {
+      @include panel(1,
+      1,
+      0);
+      .col-3wideleft {
+        @media(min-width: 799px) {
+          padding-right: 120px;
+        }
+        .section-header,
+        .subtitle {
+          text-align: left;
+        }
+        .section-header {
+          font-weight: lighter;
+        }
+        p {
+          font-size: 1.3125rem;
+          line-height: 1.675rem;
+        }
+      }
+      .contactInfo {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        border: 1px solid color(grey-lighter);
+        a {
+          color: color(grey-text);
+        }
+        .heading {
+          background-color: color(blue-darker);
+          color: white;
+          padding: 50px 0;
+          margin-bottom: 30px;
+          h3 {
+            margin: 0;
+            padding: 0;
+          }
+          p {
+            font-size: 1.3125rem;
+            line-height: 1.75rem;
+            font-weight: bold;
+            padding-bottom: 0!important;
+          }
+        }
+        p:last-child {
+          padding-bottom: 45px;
+          a {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+    .rank-2 {
+      .wrapper {
+        .content,
+        .content-on-left,
+        .content-on-right {
+          padding: 0;
+        }
+      }
+      .col-3 {
+        padding: 0 !important;
+        height: 433px;
+        background-image: url("/sites/default/files/vendors/hpe-solutions-2.png");
+        background-size: cover;
+        border-right: 3px solid white;
+        border-bottom: 3px solid white;
+        &:first-child {
+          background-image: url("/sites/default/files/vendors/hpe-solutions-1.png");
+        }
+        &:nth-child(3) {
+          background-image: url("/sites/default/files/vendors/hpe-solutions-3.png");
+          border-right: 0px solid white;
+        }
+        .content {
+          position: relative;
+          height: 433px;
+          vertical-align: middle;
+          h2,
+          p,
+          a {
+            text-align: center;
+            max-width: 390px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          h2 {
+            padding-top: 10%;
+            font-size: 1.5rem;
+            color: white;
+          }
+          p.subtitle {
+            font-size: 1rem;
+            display: block;
+            color: white;
+          }
+        }
+        @media (max-width:800px) {
+          border-right: 0px;
+          border-bottom: 4px solid white;
+        }
+        @media (max-width:1000px) {
+          width: 100%;
+        }
+      }
+      .col-2 {
+        padding: 0 !important;
+        height: 433px;
+        background-image: url("/sites/default/files/vendors/hpe-solutions-5.png");
+        border-right: 0px solid white;
+        background-size: cover;
+        &:first-child {
+          background-image: url("/sites/default/files/vendors/hpe-solutions-4.png");
+          border-right: 3px solid white;
+        }
+        .content {
+          position: relative;
+          height: 433px;
+          vertical-align: middle;
+          h2,
+          p,
+          a {
+            text-align: center;
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          h2 {
+            padding-top: 10%;
+            font-size: 1.5rem;
+            color: white;
+          }
+          p.subtitle {
+            font-size: 1rem;
+            display: block;
+            color: white;
+          }
+        }
+        @media (max-width:800px) {
+          border-bottom: 4px solid white;
+        }
+        @media (max-width:1000px) {
+          width: 100%;
+        }
+      }
+    }
+    .rank-3 {
+      background: #696566;
+      color: white;
+      height: 206px;
+      .content {
+        @include m-max-width(1070px);
+        @include panel(1,
+        1,
+        0);
+        h3 {
+          color: white;
+          width: 70%;
+          float: left;
+          padding: 0 0 1rem 0;
+          margin: 0;
+          font-weight: 300;
+          @media (max-width: 1200px) {
+            padding-left: 20px;
+          }
+        }
+        p {
+          width: 30%;
+          float: left;
+          text-align: center;
+        }
+      }
+      @media (max-width: 1000px) {
+        height: auto;
+        .content {
+          h3,
+          p {
+            float: none !important;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .rank-4 {
+      @include panel(1,
+      1,
+      0);
+      h2 {
+        @include font-page-section-header();
+        font-size: 2.1875rem;
+      }
+      .subtitle {
+        @include m-max-width(960px);
+        margin-bottom: 50px;
+        padding: 0 20px;
+      }
+      p {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+    .rank-6 {
+      @include next_step();
+      margin-bottom: 4px;
+      border-top: 0!important;
+      h2 {
+        font-size: 0.875rem!important;
+      }
+      h3 {
+        font-size: 1.875rem!important;
+      }
+      p {
+        font-size: 1rem!important;
+        &.subtitle {
+          font-size: 1.125rem!important;
+        }
+      }
+    }
+  }
+}

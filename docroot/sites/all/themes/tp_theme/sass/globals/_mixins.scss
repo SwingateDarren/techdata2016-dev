@@ -1,0 +1,425 @@
+	// --------------------
+// TABLE OF CONTENTS
+// --------------------
+// Index
+// --------------------
+// 01 DEFAULTS
+// 02 TOOLS
+// 03 MEDIA QUERIES
+// 04 THEME MIXINS
+
+
+// =============================================================================
+// 01 DEFAULTS
+// =============================================================================
+@mixin style-select-element(){
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+@mixin element-invisible {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Turns off the element-invisible effect.
+@mixin element-invisible-off {
+	position: static !important;
+	clip: auto;
+	height: auto;
+	width: auto;
+	overflow: auto;
+}
+
+// =============================================================================
+// 02 TOOLS
+// =============================================================================
+
+/* Vertically align elements to the center of the parent element */
+@mixin vertical-align($triggerWidth:800px) {
+	@media (min-width:$triggerWidth){
+	  position: relative;
+	  top: 50%;
+	  -webkit-transform: translateY(-50%);
+	  -ms-transform: translateY(-50%);
+	  transform: translateY(-50%);
+	}
+}
+
+/* Absolute positioning parameters */
+@mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+	position: absolute;
+}
+
+/* Transform prefixes */
+@mixin m-transform($arg1, $arg2:null, $arg3:null) {
+	   -moz-transform: $arg1, $arg2, $arg3;
+	     -o-transform: $arg1, $arg2, $arg3;
+	    -ms-transform: $arg1, $arg2, $arg3;
+	-webkit-transform: $arg1, $arg2, $arg3;
+          transform: $arg1, $arg2, $arg3;
+}
+
+/* Transition prefixes */
+@mixin m-transition($arg1, $arg2:null, $arg3:null) {
+       -moz-transition: $arg1, $arg2, $arg3;
+	     -o-transition: $arg1, $arg2, $arg3;
+	    -ms-transition: $arg1, $arg2, $arg3;
+	-webkit-transition: $arg1, $arg2, $arg3;
+          transition: $arg1, $arg2, $arg3;
+}
+
+/* Max-width commonly used parameters used to centrally align a containing element */
+@mixin m-max-width($max-width:$main-max-width, $mobileBreakpoint:0) {
+	max-width: $max-width;
+	padding:0;
+	margin:0;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	box-sizing: border-box;
+	@if($mobileBreakpoint==1){
+		@media (max-width:$max-width){
+			padding-left:20px !important;
+			padding-right:20px !important;
+		}
+	}
+}
+
+// Button hover for background and color change on hover ( $color argument is optional )
+@mixin btn-hover ($background, $color:null){
+	&:hover {
+		background: $background;
+		color: $color;
+	}
+}
+
+@mixin hover($arg1, $arg2:null, $arg3:null) {
+	background: $arg1;
+	color: $arg2;
+}
+
+
+
+@mixin button($normal_bg, $normal_text:null, $normal_border:null, $hover_bg:null, $hover_text:null, $hover_border:null , $padding_top_bottom:10px, $padding_sides:35px, $border-radius:5px, $fontfamily: $base-font-family,$fontWeight:600) {
+	border:1px solid $normal_border !important;
+	background-color: $normal_bg !important;
+	padding:$padding_top_bottom $padding_sides !important;
+	@media (max-width:800px){
+		padding:$padding_top_bottom $padding_sides/2 !important;
+	}
+	color:$normal_text !important;
+	text-decoration: none;
+	font-size:1rem;
+	font-family: $fontfamily;
+	font-weight: $fontWeight;
+	display:inline-block;
+	@include m-transition(all,0.5s);
+	@include border-radius($border-radius);
+	-webkit-appearance: none;
+	text-align: center;
+	min-width: 180px !important;
+ 	&:hover{
+		border:1px solid $hover_border !important;
+		background-color: $hover_bg !important;
+		color:$hover_text !important;
+		@include m-transition(all,0.5s);
+	}
+}
+
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+// =============================================================================
+// 04 THEME MIXINS
+// =============================================================================
+
+@mixin gradient($color1, $color2) {
+	background: $color1; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y0NjQ4MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Y0NjQ4MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2VmNTE2ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZjUxNmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left,  $color1 0%, $color1 50%, #ef516f 50%, #ef516f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,$color1), color-stop(50%,$color1), color-stop(50%,$color2), color-stop(100%,$color2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  $color1 0%,$color1 50%,$color2 50%,$color2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  $color1 0%,$color1 50%,$color2 50%,$color2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  $color1 0%,$color1 50%,$color2 50%,$color2 100%); /* IE10+ */
+	background: linear-gradient(to right,  $color1 0%,$color1 50%,$color2 50%,$color2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=1 ); /* IE6-8 */
+}
+
+@mixin shadow ($top: auto, $right: auto, $bottom: auto, $left: auto, $colorVal: $shadowColour) {
+	-webkit-box-shadow: $top $right $bottom $left $colorVal;
+	-moz-box-shadow: $top $right $bottom $left $colorVal;
+	box-shadow: $top $right $bottom $left $colorVal;
+}
+
+
+
+@mixin noTransition {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
+}
+@mixin pageTop(){
+	margin-top: 124px;
+	@media (max-width:800px){
+		margin-top: 76px; //102
+	}
+}
+@mixin mobileOverlay($height:525px,$target:800px,$opacity:0.6,$apply:1){
+
+	// @media (max-width:$target)  {
+	// 	&:before{
+	// 		content:'';
+	// 		width:100%;
+	// 		left: 0;
+	// 		height:$height;
+	// 		position: absolute;
+	// 		background-color:rgba(0,0,0,$opacity);
+	// 		z-index:1;
+	// 	}
+	// 	.wrapper{
+	// 		z-index: 2;
+	// 		position: absolute;
+	// 	}
+	// 	color:white !important;
+	// 	padding-left:20px;
+	// 	padding-right:20px;
+	// }
+}
+@mixin panel($top:-1,$bottom:-1,$margin: 1,$scale:1){
+
+	@if($top==1){
+		padding-top:$panelTopHeight*$scale;
+	}
+	@if($bottom==1){
+		padding-bottom:$panelBottomHeight*$scale;
+	}
+	@if($bottom>1){
+		padding-bottom:$bottom;
+	}
+	@if($top>1){
+		padding-top:$bottom;
+	}
+	@if($top==0){
+		padding-top:0;
+	}
+	@if($bottom==0){
+		padding-bottom:0;
+	}
+	@media (max-width:800px){
+		@if($top==1){
+			padding-top:($panelTopHeight*$scale)/2;
+		}
+		@if($top==0){
+			padding-top:0;
+		}
+		@if($bottom==1){
+			padding-bottom:($panelBottomHeight*$scale)/2;
+		}
+		@if($bottom==0){
+			padding-bottom:0;
+		}
+		@if($margin==1){
+			margin: auto 20px !important;
+		}
+		@if($margin==0){
+			margin: auto 0px !important;
+		}
+	}
+	@media (min-width:801px) and (max-width:1200px){
+		@if($top==1){
+			padding-top:($panelTopHeight*$scale)*0.66;
+		}
+		@if($top==0){
+			padding-top:0;
+		}
+		@if($bottom==1){
+			padding-bottom:($panelBottomHeight*$scale)*0.66;
+		}
+		@if($bottom==0){
+			padding-bottom:0;
+		}
+		@if($margin==1){
+			margin-left: 50px !important;
+			margin-right: 50px !important;
+		}
+		@if($margin==0){
+			margin: auto 0px !important;
+		}
+	}
+}
+
+  @mixin clearfix() {
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+    }
+
+    &:after {
+      clear: both;
+      visibility: hidden;
+    }
+  }
+
+%clearfix,
+.clearfix {
+  @include clearfix();
+}
+
+%chevron,
+.chevron{
+	@media(min-width:600px){
+		&:before{
+	        content:'';
+	        // background:url('/sites/all/themes/tp_theme/images/icons/down-chevron.png') 50% 50% no-repeat;
+		 	position: absolute;
+		    width: 60px;
+		    height: 60px;
+		    margin-left: 50%;
+		    left: -30px;
+		    display: block;
+		    top: 619px;
+	    }
+	}
+    @media (min-width:1900px ) {
+		&:before{
+		    top:759px ;
+		}
+    }
+}
+%chevron-mpu,
+.chevron-mpu{
+	@media(min-width:600px){
+		&:before{
+	        content:'';
+	        // background:url('/sites/all/themes/tp_theme/images/icons/down-chevron.png') 50% 50% no-repeat;
+		 	position: absolute;
+		    width: 60px;
+		    height: 60px;
+		    margin-left: 50%;
+		    left: -30px;
+		    display: block;
+		    top: 495px;
+	    }
+	}
+    @media (min-width:1900px ) {
+		&:before{
+		    top:600px;
+		}
+    }
+}
+
+@mixin button-light-to-primary{
+	@include button(color(blue-lighter), white, color(blue-lighter), color(blue-medium), white,  color(blue-medium),25px, 20px )
+}
+@mixin button-primary{
+	@include button(color(blue-medium), white, color(blue-medium), color(grey-darker), white,  color(grey-darker),25px, 20px )
+}
+
+@mixin button-light{
+	@include button(color(blue-lighter), white, color(blue-lighter), color(grey-darker), white,  color(grey-darker),22px, 20px )
+}
+
+@mixin button-primary-small{
+	@include button(color(blue-medium), white, color(blue-medium), color(grey-darker), white,  color(grey-darker),10px, 22px )
+}
+
+@mixin button-light-small{
+	@include button(color(blue-lighter), white, color(blue-lighter), color(grey-darker), white,  color(grey-darker),10px, 22px )
+}
+
+@mixin button-white{
+	@include button(white, color(blue-lighter), white, color(grey-darker), white,  color(grey-darker),20px, 45px )
+}
+/// next two didn't exist???
+@mixin button-orange{
+	@include button(color(blue-medium), white, color(blue-medium), color(grey-darker), white,  color(grey-darker),25px, 20px )
+}
+
+@mixin button-red{
+	@include button(color(blue-medium), white, color(blue-medium), color(grey-darker), white,  color(grey-darker),25px, 20px )
+}
+
+
+%button-primary, .button-primary{
+	@include button-primary;
+}
+
+%button-orange, .button-orange{
+	@include button-orange;
+}
+%button-red, .button-red{
+	@include button-red;
+}
+.button-light-to-primary{
+	@include button-light-to-primary;
+}
+%button-light, .button-light{
+	@include button-light;	
+}
+%button-primary-small, .button-primary-small{
+	@include button-primary-small;
+}
+%button-light-small, .button-light-small{
+	@include button-light-small;
+}
+%button-white, .button-white{
+	@include button-white;
+}
+.button-link {
+	cursor: pointer;
+	color:color(blue-lighter);
+	text-decoration: underline;
+	font-weight: 600;
+	padding:0 0 3px 0;
+	border-bottom:1px solid color(blue-lighter);
+	width:auto;
+	display: inline-block;
+	text-decoration: none;
+	&:hover{
+		color:color(blue-medium);
+		border-bottom:1px solid color(blue-medium);
+	}
+}

@@ -1,0 +1,1208 @@
+.page-why-tech-data {
+	.rank-0 {
+		h1, h2 {
+			@include m-max-width(910px);
+			text-align: center;
+			&.mpu-subtitle{
+				font-weight:normal !important;
+			}
+		}
+	}
+	.views-row-2 .node-text-image {
+		@include panel(1, 1, 0);
+		padding-bottom:80px;
+		h2.section-header {
+			text-align: center;
+		}
+		.col-2{
+			padding-top:70px;
+		 	p{
+				@include m-max-width(440px);
+				img{
+					padding-bottom:50px;
+				}
+			}
+		}
+	}
+	.node-text-image{
+		background-size:cover !important;
+		hr {
+			width: 50px;
+			margin: 48px auto;
+			border: 0;
+			border-bottom: 3px solid color(blue-lighter);
+		}
+		a{
+			padding-top:1.5rem;
+			display:inline-block;
+		}
+
+
+		.col-2{
+			@media (min-width:801px) {
+				padding-right:40px;
+				padding-left:40px;
+			}
+			@media (min-width:1200px) {
+				&:first-child{
+					padding-left:0px;
+				}
+				&:last-child{
+					padding-right:0px;
+				}
+			}
+		}
+
+		.col-3{
+			@media (max-width:800px) {
+				text-align: center;
+			}
+			@media (min-width:801px) {
+				padding-top:50px;
+				padding-right:30px;
+				padding-left:30px;
+			}
+			@media (min-width:1200px) {
+				&:first-child{
+					padding-left:0px!important;
+				}
+				&:last-child{
+					padding-right:0px!important;
+				}
+			}
+		}
+		.col-4{
+			@media (min-width:801px) {
+				padding-top:50px;
+				padding-right:20px;
+				padding-left:20px;
+			}
+			@media (min-width:1200px) {
+				&:first-child{
+					padding-left:0px;
+				}
+				&:last-child{
+					padding-right:0px;
+				}
+			}
+		}
+		@media (max-width:800px) {
+			.subtitle{
+				padding-left:20px;
+				padding-right:20px;
+			}
+			.col-2,.col-3,.col-4{
+				@include m-max-width(400px);
+				img{
+					padding-top:50px;
+					display: block !important;
+					margin-left: auto;
+					margin-right:auto;
+				}
+			}
+		}
+		@media (min-width:800px) and (max-width:980px) {
+			.col-2,.col-3,.col-4{
+				img{
+					display: block !important;
+					margin-left: auto;
+					margin-right:auto;
+				}
+			}
+		}
+
+	}
+	.rank-20{
+		height: 560px;
+		border-top: 3px solid white;
+
+
+	}
+}
+
+.page-why-tech-data.page-why-tech-data-grow-your-sales,
+.page-why-tech-data.page-why-tech-data-improve-your-profit-margins,
+.page-why-tech-data.page-why-tech-data-reduce-your-costs,
+.page-why-tech-data.page-why-tech-data-increase-customer-satisfaction{
+	// IMAGE BOX IN SECTION 1
+
+	@media(max-width:800px){
+		.mpu-header {
+		    padding: 50px 20px 0!important;
+		}
+		.mpu-subtitle {
+		    padding: 0 20px!important;
+		    font-size: 1.3rem!important;
+		    line-height: 1.4em!important;
+		}
+
+		.views-row-1 {
+			.text {
+				padding-top: 13px!important;
+			    padding-bottom: 43px!important;
+			}
+		}
+		.views-row-2 {
+			.section-header {
+				margin-left: 0!important;
+			}
+			>div {
+			    padding-top: 40px!important;
+		        padding-bottom: 0!important;
+			    .content {
+			    	h3 {
+					    padding: 43px 0 15px !important
+			    	}
+			    	p {
+			    		padding: 0 20px 1rem!important
+			    	}
+			    	p:last-child {
+		    		    padding-bottom: 10px!important;
+			    	}
+			    }
+			}
+		}
+		.views-row-3 {
+			>div {
+			    padding-top: 42px!important;
+		        padding-bottom: 30px!important;
+		        .row {
+		        	.col-4:first-child {
+	        		    padding-top: 12px!important;
+		        	}
+			        img {
+		        	    padding-top: 30px!important;
+			        }
+			    }
+			}
+		}
+		.views-row-4 {
+			>div {
+			    padding-top: 45px!important;
+			    padding-bottom: 28px!important;
+			    .text {
+			    	>h2 {
+		    		    margin-bottom: 7px!important;
+			    	}
+			    }
+			    .row {
+			    	.col-3 {
+		    		    padding-top: 0px!important;
+		    		    img {
+	    		    	    padding-top: 30px!important;
+		    		    }
+			    	}
+			    }
+			}
+		}
+		.views-row-5 {
+		    padding-bottom: 0!important;
+		    >div {
+		    	padding-top: 45px!important;
+	    	    padding-bottom: 0!important;
+		    }
+			.col-5 {
+				p:last-child {
+				    padding-bottom: 45px!important;
+				}
+			}
+		}
+		.views-row-6 {
+			>div {
+				padding-top: 45px!important;
+			}
+			.subtitle {
+				padding-bottom: 45px!important;
+			}
+			.ghost {
+				padding: 45px 35px 28px!important;
+			}
+		}
+		.views-row-7 {
+			>div {
+				padding-top:43px!important;
+			}
+			.subtitle {
+			    padding-bottom: 17px!important;
+			}
+			.col-2 {
+				.col-2 {
+				    margin-top: 30px!important;
+				}
+				p:last-child {
+				    padding-bottom: 10px!important;
+				}
+			}
+			.row-second {
+			    margin-bottom: 35px!important;
+			}
+		}
+		.views-row-8 {
+			>div.node.node-text-image {
+				padding-top: 45px!important;
+			    padding-bottom: 25px!important;
+			}
+		}
+		.views-row-9 {
+			>div {
+			    padding-top: 50px!important;
+		        padding-bottom: 45px!important;
+			}
+		}
+		.views-row-10 {
+		    padding-top: 10px!important;
+		    padding-bottom: 0px!important;
+	        .quote {
+        	    font-size: 1.45rem!important;
+	        }
+	        .text {
+        	    padding-bottom: 28px!important;
+	        	> p:first-child {
+        		    padding-bottom: 5px!important;
+	        	}
+	        }
+		}
+		footer {
+			.footer-banner {
+				padding-bottom: 35px!important;
+				.content {
+					padding-top:45px!important;
+				}
+			}
+			.block-menu {
+			    padding-top: 40px!important;
+			    li {
+		    	    width: 33.3%!important;
+				    font-size: 0.8rem!important;
+			    }
+			}
+			.social-footer {
+			    padding-bottom: 26px!important;
+			}
+		}
+	}
+	@media(max-width:980px){
+		.views-row-5,.views-row-9,.views-row-10 {
+			img {
+				display: block!important;
+			    margin: 0 auto!important;
+			}
+		}
+		.footer-banner .section-header {
+		    padding: 0 20px 20px!important;
+		    font-size: 1.5rem!important;
+		    line-height: 1.4em!important;
+		}
+	}
+
+	.section-header {
+		letter-spacing: 0.04rem;
+	}
+	.wrapper {
+		.content {
+			.mpu-subtitle {
+			    text-align: center;
+			    font-size: 1.875rem;
+			    max-width: 980px;
+			    font-weight: lighter!important;
+			    margin-top: 1rem;
+			}
+		}
+	}
+
+	.views-row {
+		.text {
+			.nodisplay {
+				display:none;
+			}
+		}
+	}
+
+	.views-row-2 {
+		.section-header {
+			color: color(blue-darker);
+		    margin-bottom: 15px;
+		}
+		.subtitle {
+	        padding-bottom: 43px;
+	        max-width: 670px;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+	}
+
+
+	.views-row-3 {
+		.subtitle {
+		    padding-bottom: 5px;
+		}
+		h4 {
+		    margin-bottom: 12px;
+		}
+		p {
+			a {
+			    padding-top: 7px;
+			    letter-spacing: 0.03rem;
+			}
+		}
+		.col-4 {
+		    padding-right: 10px;
+		    padding-left: 10px;
+		}
+		.col-2 {
+			p {
+			    max-width: 360px;
+			    margin-left: auto;
+			    margin-right: auto;
+			}
+			@media(min-width:800px){
+				&:first-child {
+					padding-left: 120px;
+				}
+				&:last-child {
+					padding-right: 120px;
+				}
+			}
+		}
+	}
+
+
+	.views-row-4 {
+		h2 {
+			color: color(blue-darker);
+		    font-size: 1.875rem;
+		    font-weight: normal;
+		    padding-bottom: 20px!important;
+		}
+		.row {
+			.col-3 {
+			    padding-top: 33px;
+		        padding-right: 32px;
+			    padding-left: 32px;
+			}
+			p:nth-child(1) {
+			    padding-bottom: 5px!important;
+			}
+			h4 {
+			    margin-bottom: 7px!important;
+			}
+			a {
+			    padding-top: 0!important;
+			}
+		}
+		.wrapper {
+		    max-width: 1200px;
+		}
+		.col-3 {
+			&:nth-child(4){
+				clear:left;
+				@media(min-width:1200px){
+					padding-left:0!important;
+				}
+			}
+		}
+	}
+
+
+	.views-row-5 {
+		h2 {
+			color: color(white);
+		    font-size: 1.875rem;
+		    font-weight: normal;
+		}
+		.subtitle {
+		    padding-bottom: 45px;
+		}
+		h4 {
+			color: color(white);
+			font-size: 1.3125rem;
+		    font-weight: bold;
+		    margin-bottom: 15px;
+		    letter-spacing: 0.05rem;
+		}
+		p {
+			color: color(white);
+		}
+		a {
+			padding-top: 3px!important;
+		    letter-spacing: 0.03rem;
+		}
+		.col-5 {
+		    padding-left: 15px;
+		    padding-right: 15px;
+			p:first-child {
+			    height: 75px;
+			}
+		}
+		.col-1 {
+			p {
+			    max-width: 515px;
+			    margin-left: auto;
+			    margin-right: auto;
+			}
+		}
+		.col-2 {
+			p {
+			    max-width: 380px;
+			    margin-left: auto;
+			    margin-right: auto;
+			}
+			@media(min-width:800px){
+				&:first-child {
+					padding-left: 40px;
+				}
+				&:last-child {
+					padding-right: 40px;
+				}
+			}
+		}
+	}
+
+
+	.views-row-6 {
+		.rank-5 {
+			padding-bottom: 0!important;
+		}
+		background-color: color(grey-lightest)!important;
+		.wrapper {
+			max-width: 100%!important;
+		}
+		h2 {
+		    color: color(blue-darker);
+		    font-size: 1.875rem;
+		    font-weight: normal;
+		}
+		.subtitle {
+		    color: color(grey-darkest);
+		    padding-bottom: 50px;
+		}
+	}
+
+
+	.views-row-7 {
+		.rank-6 {
+			padding-bottom: 0!important;
+		}
+		.wrapper {
+			max-width: 100%!important;
+		}
+		h2 {
+		    color: color(blue-darker);
+		    font-size: 1.875rem;
+		    font-weight: lighter;
+		}
+		.subtitle {
+		    color: color(grey-darkest);
+		    padding-bottom: 50px;
+		}
+		.text {
+			>.row {
+				@media(min-width:1200px){
+				    display: flex;
+				}
+				>.col-3{
+					padding: 0 40px 0 0;
+					@media(max-width:1199px){
+						border-top: 1px solid #b7b7b7;
+						width:100%;
+						.col-2 {
+					    	&:nth-child(1){
+					    		width:30%;
+					    	}
+					    	&:nth-child(2){
+				    		    width:70%;
+					    	}
+					    }
+					}
+					@media(min-width:800px){
+						border-top: 1px solid #b7b7b7;
+						border-left: 1px solid #b7b7b7;
+						&:nth-child(3){
+							border-right: 1px solid #b7b7b7;
+						}
+					}
+					@media(max-width:800px){
+					    width: 100%;
+					    max-width: 100%;
+					    padding: 0;
+					    .col-2 {
+					    	&:nth-child(1){
+					    		display:none;
+					    	}
+					    	&:nth-child(2){
+				    		    max-width: 80%;
+							    margin: 0 auto;
+					    	}
+					    }
+					}
+					.col-2 {
+						padding: 0;
+						img {
+							width:200%;
+						}
+						.logo {
+						    width: auto;
+						    margin-bottom: 30px;
+						    padding-top: 0;
+						}
+						h3 {
+						    margin-bottom: 20px;
+						    font-size: 2rem;
+						    color: color(blue-darker);
+						    font-weight: lighter;
+						}
+						p {
+						    line-height: 1.4em;
+						}
+						a {
+						    padding-top: 2px;
+						}
+						&:nth-child(2){
+							margin-top: 7%;
+						}
+					}
+				}
+				>.col-2 {
+					padding: 0 40px 0 0;
+					@media(max-width:1199px){
+						border-top: 1px solid #b7b7b7;
+						&:nth-child(2){
+			    		    border-bottom: 1px solid #b7b7b7;
+				    	}
+						width:100%;
+						.col-2 {
+					    	&:nth-child(1){
+					    		width:30%;
+					    	}
+					    	&:nth-child(2){
+				    		    width:70%;
+					    	}
+					    }
+					}
+					@media(min-width:800px){
+						border-top: 1px solid #b7b7b7;
+						border-left: 1px solid #b7b7b7;
+						&:nth-child(2){
+							border-right: 1px solid #b7b7b7;
+						}
+					}
+					@media(max-width:800px){
+					    width: 100%;
+					    max-width: 100%;
+					    padding: 0;
+					    .col-2 {
+					    	&:nth-child(1){
+					    		display:none;
+					    	}
+					    	&:nth-child(2){
+				    		    max-width: 80%;
+							    margin: 0 auto;
+					    	}
+					    }
+					}
+					.col-2 {
+						padding: 0;
+						img {
+							width:200%;
+						}
+						.logo {
+						    width: auto;
+						    margin-bottom: 30px;
+						    padding-top: 0;
+						}
+						h3 {
+						    margin-bottom: 20px;
+						    font-size: 2rem;
+						    color: color(blue-darker);
+						    font-weight: lighter;
+						}
+						p {
+						    line-height: 1.4em;
+						}
+						a {
+						    padding-top: 2px;
+						}
+						&:nth-child(2){
+							margin-top: 4%;
+						}
+					}
+				}
+				@media(max-width:800px){
+					&.row-second {
+					    margin-bottom: 50px;
+				    }
+				}
+				@media(min-width:1200px){
+					p {
+				        max-width: 380px;
+					}
+					&.row-second {
+						>.col-2 {
+							border-bottom: 1px solid #b7b7b7;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	.views-row-8 {
+		// .rank-7 {
+		//     padding-bottom: 0!important;
+		// }
+		background-color: color(grey-lightest);
+		>div {
+			padding-bottom: 35px!important;
+		}
+		h2 {
+		    color: color(blue-darker);
+		    font-size: 1.875rem;
+		    font-weight: lighter;
+		}
+		.subtitle {
+		    color: color(grey-darkest);
+		    // padding-bottom: 50px;
+		}
+	}
+
+
+	.views-row-9 {
+		h2 {
+		    color: white;
+		    font-size: 1rem;
+		    max-width: 740px;
+		    margin: 16px auto;
+		    line-height: 1.45em;
+			&:nth-of-type(1){
+				display:none;
+			}
+		}
+		a {
+		    color: white;
+		    padding-top: 15px;
+		    text-transform: uppercase;
+		    letter-spacing: 0.05rem;
+		    font-weight: normal;
+		}
+		img {
+			width: auto!important;
+		    height: auto!important;
+		}
+		.wrapper {
+			.content {
+				.text {
+					.col-2 {
+						p {
+							max-width: 500px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	.views-row-10 {
+		img {
+			width: auto!important;
+		    height: auto!important;
+		}
+		.quote {
+		    font-size: 1.75rem;
+		    color: color(nav-normal);
+		    max-width: 870px;
+		    margin: 20px auto;
+		    max-width:780px;
+		}
+		.quote-by {
+		    color: color(blue-medium);
+		    font-size: 1.3125rem;
+		    padding-top: 10px;
+		    padding-bottom: 0;
+		}
+	}
+
+	.ghost-section {
+		display: flex;
+	}
+		.ghost-wrapper {
+		    width: 50%;
+		    box-sizing: border-box;
+		    float: left;
+		    color: inherit;
+		    height: inherit;
+		    &:nth-of-type(1) {
+	    	    background: url(/sites/default/files/text_images/why-techdata/grow-your-sales/technical-1.png) 100% 50% no-repeat;
+		    }
+		    &:nth-of-type(2) {
+	    	    background: url(/sites/default/files/text_images/why-techdata/grow-your-sales/technical-2.png) 100% 50% no-repeat;
+		    }
+		    .ghost-single-wrapper {
+	    	    max-width: 1290px;
+			    margin: 0 auto;
+		    }
+		    p {
+		    	&:nth-child(1){
+		    		color:color(black-lighter);
+					font-size: 1.3125rem;
+					font-weight: bold;
+		    	}
+		    	&:nth-child(2){
+		    		color:color(grey-darkest);
+		    		line-height: 1.45em;
+				    font-weight: normal;
+		    	}
+		    }
+		}
+
+		.ghost {
+		    width: 50%;
+		    margin: 55px 100px 55px 0;
+			background-color: rgba(255, 255, 255, 0.9);
+		    padding: 50px 70px 50px 80px;
+
+			em {
+				font-style: normal;
+				font-size: 0.875rem;
+				color: color(blue-lighter);
+			}
+			a {
+			    padding-top: 0!important;
+			}
+		}
+		@media (max-width:1280px) {
+			h2 {
+				margin-left: 35px;
+			}
+			.ghost {
+				margin: 35px;
+			    padding: 35px 45px 35px 55px;
+			}
+		}
+		@media (min-width:800px) {
+			.ghost {
+			    max-width: 455px;
+			}
+		}
+		@media (max-width:800px) {
+			.ghost-section {
+			    display: inline-block;
+			}
+			.ghost-wrapper {
+			    width: 100%;
+			}
+			.ghost {
+				width: 100%;
+				margin: 0!important;
+			    padding: 35px;
+
+				img {
+					display: inline-block
+				}
+				p {
+					text-align: center;
+				}
+			}
+		}
+		@media (min-width:1280px) {
+			.ghost {
+		    	margin-left: 55px;
+			}
+		}
+	.image-box {
+		text-align: center;
+		padding: 10px;
+
+		@media (max-width:800px) {
+			padding: 0px;
+		}
+		.image-box-1, .image-box-2, .image-box-3, .image-box-4, .image-box-5 {
+			height: 160px;
+			background-size: cover;
+		    // padding: 70px 0;
+			@media (max-width:800px) {
+				padding: 0;
+			}
+			img {
+				@include vertical-align();
+			}
+		}
+		.image-box-1 {
+			background: url("/sites/default/files/text_images/why-techdata/grow-your-sales/partnership-1-bg.png") no-repeat;
+			background-size: cover;
+		}
+		.image-box-2 {
+			background: url("/sites/default/files/text_images/why-techdata/grow-your-sales/partnership-2-bg.png") no-repeat;
+			background-size: cover;
+		}
+		.image-box-3 {
+			background: url("/sites/default/files/text_images/why-techdata/grow-your-sales/partnership-3-bg.png") no-repeat;
+			background-size: cover;
+		}
+		.image-box-4 {
+			background: url("/sites/default/files/text_images/why-techdata/grow-your-sales/partnership-4-bg.png") no-repeat;
+			background-size: cover;
+		}
+		.image-box-5 {
+			background: url("/sites/default/files/text_images/why-techdata/grow-your-sales/partnership-5-bg.png") no-repeat;
+			background-size: cover;
+		}
+		&.col-4 {
+		    padding-top: 45px;
+		}
+		&.col-3 {
+			.content {
+		    	min-height: 290px;
+			}
+		}
+		&.col-2 {
+		    padding-top: 10px;
+			.content {
+		    	min-height: 230px;
+		    	padding-left: 35px;
+		    	padding-right: 35px;
+		    	p {
+		    		max-width: 100%;
+		    	}
+			}
+		}
+		img {
+			width: auto!important;
+			height: auto!important;
+		}
+		.content {
+			min-height: 260px;
+			padding-left: 50px;
+			padding-right: 50px;
+			background-color: color(grey-lightest);
+			@media (max-width:800px) {
+				background-color: white;
+		    	padding-left: 0px!important;
+		    	padding-right: 0px!important;
+			}
+			h3 {
+				margin: 0;
+				padding: 30px 0 15px!important;
+			}
+			p {
+				padding-bottom: 0;
+			}
+			a {
+			    padding-top: 15px;
+			    padding-bottom: 35px;
+				font-weight: bold;
+				color: color(blue-lighter);
+				text-transform: uppercase;
+			    letter-spacing: 0.055rem;
+			}
+		}
+	}
+
+	.rank-0 {
+		h1, h2 {
+			@include m-max-width(1080px);
+			text-align: center;
+		}
+	}
+	.views-row-2 .node-text-image{
+		@include panel(1, 1, 0);
+
+		h2.section-header {
+			text-align: center;
+		}
+		.col-3{
+			@media (max-width:800px) {
+				text-align: center;
+				@include m-max-width(400px);
+				h3{
+					img{
+						clear: both;
+						display: block;
+						margin-left: auto;
+						margin-right:auto;
+						padding:50px 0 30px;
+					}
+				}
+			 	p{
+			 		text-align: center;
+			 		padding: 0 20px 1rem;
+			 	}
+			}
+			@media (min-width:801px) {
+				h3{
+					padding-top:10px;
+					min-height:80px;
+					text-align: left;
+					img{
+						float:left;
+						padding-right:30px;
+					}
+				}
+			 	p{
+					text-align: left;
+				}
+			}
+		}
+		hr{
+			margin-bottom:0 !important;
+		}
+	}
+	.views-row-3 .node-text-image{
+		@include panel(1, 1, 0);
+
+		h2 {
+			@include font-page-section-header();
+			text-align: center;
+			color:white;
+		}
+		@media (max-width:800px) {
+			p,h2{
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+		h3{
+			margin-bottom:0;
+		}
+		.col-3{
+			min-height:400px;
+			@media (min-width:801px) and (max-width:980px) {
+				width:48%;
+			}
+		}
+	}
+	.views-row-4 .node-text-image,
+	.views-row-5 .node-text-image,
+	.views-row-6 .node-text-image,
+	.views-row-7 .node-text-image,
+	.views-row-8 .node-text-image,
+	.views-row-9 .node-text-image {
+		@include panel(1, 1, 0);
+
+		h2.section-header {
+			// text-align: center;
+		}
+		.col-3{
+
+			h3{
+				padding-top:10px;
+				img{
+					float:left;
+					padding-right:20px;
+				}
+			}
+		 	p{
+				text-align: left;
+			}
+		}
+	}
+	.views-row-4{
+
+		@media (max-width:1099px) {
+			.row .col-2 .row .col-2{
+				width:100%;
+				float:none;
+			}
+		}
+		@media (max-width:980px){
+			.col-2{
+				p{
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+			}
+		}
+
+		@media (min-width:1100px) {
+			h2{
+				padding-bottom:70px;
+				margin-bottom: 0;
+			}
+			.row {
+				&.row-first{
+					padding-bottom: 70px;
+
+				}
+				.col-2 .row{
+					.col-2:first-child{
+						max-width:260px;
+						margin:0;
+						padding:0 30px 0 0 !important;
+						p{
+							max-width:230px;
+							margin:0;
+							padding:0;
+							img{
+								max-width:230px;
+								margin:0;
+								padding:0;
+							}
+						}
+					}
+					.col-2:last-child{
+						max-width:290px;
+						margin:0;
+						padding:0 0 0 0 !important;
+						h3{
+							font-size: 1.25rem;
+							text-align: left;
+						}
+						p{
+							text-align: left;
+						}
+						a {
+							padding:0 !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	.views-row-5{
+		background-color: color(grey-lightest);
+		h3{
+			font-size: 1.25rem;
+		}
+
+	}
+	.views-row-6{
+		h3{
+			font-size: 1.25rem;
+		}
+	}
+	// .views-row-7{
+	// 	h2{
+	// 		padding-bottom:50px;
+	// 		margin-bottom:0;
+	// 	}
+	// 	.col-2{
+	// 		padding:70px 100px;
+	// 		width:48%;
+	// 		margin-bottom:4%;
+	// 		border:1px solid color(grey-medium);
+	// 		img{
+	// 			padding:0 !important;
+	// 		}
+	// 		&:first-child{
+	// 			margin-right:2%;
+	// 		}
+	// 		&:last-child{
+	// 			margin-left:2%;
+	// 		}
+	// 		@media (max-width:800px) {
+	// 			width:80%;
+	// 			padding:5%;
+	// 		}
+	// 		@media (min-width:800px) and (max-width:980px) {
+	// 			padding:5%;
+	// 		}
+	// 		@media (min-width:800px) {
+	// 			margin:1% !important;
+	// 		}
+	// 	}
+	// }
+	.views-row-8{
+		.col-3,.col-2{
+			@media (max-width:800px) {
+				padding-top:80px;
+				background-position: 50% 20px;
+				background-repeat: no-repeat;
+				h3{
+					text-align: center;
+				}
+				p{
+					text-align: center !important;
+				}
+			}
+			@media (min-width:800px) {
+				padding-top:50px;
+				padding-left:80px;
+				background-position: left 70px;
+				background-repeat: no-repeat;
+				h3{
+					padding-left:0;
+					text-align: left;
+				}
+				p{
+					text-align: left !important;
+				}
+			}
+			@media (min-width:800px) and (max-width:1200px) {
+				background-position: 10px 70px !important;
+			}
+			&.end-user{
+				background-image: url("/sites/default/files/text_images/why-techdata/ms-end-user-demand-generation.png");
+			}
+			&.events{
+				background-image: url("/sites/default/files/text_images/why-techdata/ms-events.png");
+			}
+			&.growth{
+				background-image: url("/sites/default/files/text_images/why-techdata/ms-growth-days.png");
+			}
+			&.marketing{
+				background-image: url("/sites/default/files/text_images/why-techdata/ms-marketing-portal.png");
+			}
+			&.vendor{
+				background-image: url("/sites/default/files/text_images/why-techdata/ms-vendor-engagement-and-funding-support.png");
+			}
+		}
+	}
+	.views-row-9{
+		.rank-8{
+			&.disablePaddingTop{
+				padding-top:0;
+			}
+		 	&.disablePaddingBottom{
+				padding-bottom:0;
+			}
+
+			.content p{
+				@include m-max-width(740px);
+			}
+			.col-2,.col-3,.col-4,.col-1{
+				padding-top:0px !important;
+
+				.central{
+					img{
+						padding-top:0px !important;
+						padding-bottom:20px;
+					}
+					p{
+						max-width: 80%;
+						margin-left:auto;
+						margin-right:auto;
+					}
+				}
+				@media(max-width:1100px){
+					width:100% !important;
+					max-width:100% !important;
+					padding:50px 0 !important;
+				}
+				@media(min-width:1100px){
+					height:500px;
+					.central{
+						@include vertical-align();
+
+					}
+				}
+			}
+		}
+	}
+	.views-row-10 .node-text-image{
+		height: 560px;
+		border-top: 3px solid white;
+
+
+	}
+
+}
+.page-why-tech-data.page-why-tech-data-increase-customer-satisfaction,
+.page-why-tech-data.page-why-tech-data-reduce-your-costs,
+.page-why-tech-data.page-why-tech-data-improve-your-profit-margins{
+	.ghost-wrapper{
+		width: 100%;
+		background-size:cover !important;
+	}
+
+}

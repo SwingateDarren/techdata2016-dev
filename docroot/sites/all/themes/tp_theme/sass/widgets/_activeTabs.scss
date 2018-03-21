@@ -1,0 +1,98 @@
+
+@mixin ActiveTabs{
+	padding-top:50px;
+	@media(max-width:800px){
+		padding-top:20px;
+	}
+	ul.tablist{
+		@media(min-width:800px){	
+		    width: 100%;		
+		    display: inline-flex;
+		    display: -webkit-inline-flex;
+		    display:-ms-flexbox;
+		    
+		}
+
+		&.tabs-2 li{
+			@include col(2);
+		}
+		&.tabs-3 li{
+			@include col(3);
+		}
+		&.tabs-4 li{
+			@include col(4);
+		}
+		&.tabs-5 li{
+			@include col(5);
+			@media(min-width:800px){
+			    width: 19.6%!important;
+			    margin: 0 0.2%;
+			}
+		}
+		&.tabs-6 li{
+			@include col(6);
+		}
+		li{
+			width: auto !important;
+			max-width: 20%;
+			display: block;
+			text-align: center;
+			margin-left:10px;
+			margin-right:10px;
+			color: #bcbcbc!important;
+			border-bottom:7px solid #bcbcbc;
+		    min-height: 66px;
+		    line-height: 1.375rem;
+		    padding-bottom: 15px;
+		    cursor: pointer;		    
+			&.active{
+				color: #4c575d!important;
+				border-bottom:7px solid #942645;
+			}
+			@media(max-width:800px){
+			    width: 100%!important;
+			    max-width: 200px!important;
+			    margin: 0 auto!important;
+			    min-height: 0!important;
+			    padding-bottom: 10px!important;
+			    padding-top: 30px!important;
+			}
+		}
+	}
+	.tab{
+		clear:both;
+		padding-top: 50px;
+		display: none;
+		&.active{
+			display: block;
+		}
+		&>p {
+			padding-bottom:35px;
+			&:last-of-type {
+				padding-bottom:50px;
+			}
+			@media(min-width:800px){
+				&:not(:first-of-type){
+				    text-align: center;
+				    display: inline-block;
+				    width: 50%;
+				}
+			}
+			@media(max-width:800px){
+				text-align: center;
+			    padding-left: 20px;
+			    padding-right: 20px;
+			}
+		}
+
+	}
+	&:after {
+		display: table;
+		content: " ";
+		clear: both;
+	}
+}
+
+#ActiveTabs{
+	@include ActiveTabs;
+}

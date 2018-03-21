@@ -1,0 +1,13 @@
+.page-newsletter-confirm{
+	form.confirmation{
+		@include m-max-width(1200px);
+		padding-top:150px;
+		padding-bottom:70px;
+		input.form-submit {
+			@include button-orange;
+		}
+		#edit-cancel {
+			@include button-red;
+		}
+	}
+}

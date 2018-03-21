@@ -1,0 +1,1127 @@
+@mixin cisco-arrow-button {
+  a {
+    color: color(cisco-blue-light)!important;
+    background-color: transparent!important;
+    text-decoration: none;
+    &:after {
+      content: url(/sites/default/files/button-arrow-blue.png);
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-left: 8px;
+      transform: translateY(5px);
+    }
+    &:hover {
+      color: color(cisco-blue-light)!important;
+      background-color: transparent!important;
+    }
+  }
+}
+
+
+@mixin cisco-two-col {
+  @media all and (min-width: 981px) {
+    height: 560px;
+    padding: 0!important;
+    .content {
+      width: 41%;
+      box-sizing: border-box;
+      float: left;
+      color: inherit;
+      height: inherit;
+      padding-right: 0;
+    }
+    .image-on-right {
+
+      width: 49%;
+    }
+    .text,
+    img {
+      position: relative;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      /* IE 9 */
+      -webkit-transform: translateY(-50%);
+      /* Safari */
+      transform: translateY(-50%);
+      max-width: 100%;
+    }
+    h2 {
+      text-align: left;
+    }
+  }
+  @media all and (max-width:980px) {
+    padding: 35px!important;
+    p {
+      text-align: center;
+    }
+  }
+}
+
+@mixin cisco-two-col-left {
+  @include cisco-two-col;
+  @media(min-width: 981px) {
+    .content {
+      // margin-right: 10%;
+    }
+  }
+}
+
+@mixin cisco-two-col-right {
+  @include cisco-two-col;
+  @media(min-width: 981px) {
+    .content {
+      margin-left: 10%;
+      float: right;
+    }
+  }
+  @media(max-width:980px) {
+    &:before {
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: rgba(238, 238, 238, 0.8);
+    }
+  }
+}
+
+
+
+
+// .cisco-vendor-v2 .node-text-image{border:1px solid blue;}
+// .cisco-vendor-v2 :not(.node-text-image.rank-0){border:1px solid green !important;padding-top:70px;padding-bottom:70px;}
+// .cisco-vendor-v2 .node-text-image:not(.rank-0){border:1px solid purple !important;padding-top:70px;padding-bottom:70px;}
+@mixin cisco-vendor-v2 {
+
+  .node-text-image {
+    &:not(.rank-0):not(.next-step-panel):not(.rank-100) {
+      @include panel(1, 1, -1);
+    }
+  }
+  .cisco-grey {
+    background-color: color(cisco-grey-light);
+  }
+  .cisco-blue {
+    background-color: color(cisco-blue-light);
+  }
+  .cisco-blue-dark {
+    background-color: color(cisco-blue-dark);
+  }
+  .product-panel1 {
+    padding-bottom: 340px !important;
+    text-align: center;
+    @media(max-width: 800px) {
+      background: inherit!important;
+      padding: 35px 20px 20px!important;
+    }
+    .wrapper {
+      max-width: 910px;
+    }
+  }
+  .button {
+    background-color: color(cisco-blue-light)!important;
+    color: color(white)!important;
+    border: 0!important;
+    border-radius: 30px;
+    margin-top: 17px;
+    &:hover {
+      background-color: color(cisco-grey-dark)!important;
+      color: color(white)!important;
+      border: 0!important;
+    }
+  }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2.1875rem;
+    line-height: 2.5rem;
+  }
+  .views-row-1 {
+    .wrapper {
+      max-width: 750px;
+    }
+    img {
+      max-width: 100px;
+    }
+  }
+  .mpu-header {
+    margin-top: 26.8px;
+    line-height: 3.125rem;
+  }
+  .node-text-image {
+    border-top: 0!important;
+  }
+}
+
+
+@mixin cisco-arrow-button-white {
+  @include cisco-arrow-button;
+  a {
+    color: color(white)!important;
+    &:after {
+      content: url(/sites/default/files/button-arrow-white-circle.png);
+    }
+  }
+}
+
+
+.cisco-arrow-button{
+  @include cisco-arrow-button;
+}
+.cisco-arrow-button-white{
+  @include cisco-arrow-button;
+}
+
+
+
+
+.cisco-vendor-v2 {
+  @include cisco-vendor-v2;
+}
+.cisco-two-col {
+  @include cisco-two-col;
+}
+.cisco-two-col-left {
+  @include cisco-two-col-left;
+}
+.cisco-two-col-right {
+  @include cisco-two-col-right;
+}
+
+.page-vendors-cisco {
+  @include vendor-cisco;
+  a.button-light,
+  a.button-white {
+    background-color: white!important;
+    color: color(cisco-blue-light)!important;
+    border-radius: 30px;
+    border: 0!important;
+    padding: 10px 35px !important;
+    &:hover {
+      background-color: color(cisco-grey-dark)!important;
+      color: color(white)!important;
+    }
+  }
+  #block-panels-mini-related-content-panel {
+    background-color: color(white)!important;
+    h2 {
+      font-size: 2.1875rem;
+      line-height: 2.5rem;
+      margin-bottom: 20px;
+      color: color(cisco-grey-dark);
+    }
+    .node-blog-post,
+    .node-resource {
+      background-color: color(white);
+      .wrapper {
+        background-color: color(grey-lighter);
+      }
+    }
+    div.view-header {
+      margin-bottom: 21px;
+    }
+  }
+  .footer-banner,
+  .cisco-footer-banner {
+    background: color(cisco-blue-light);
+    height: auto;
+    padding: 65px 0 30px;
+    @media(min-width: 1000px) {
+      height: 206px;
+      padding: 0;
+      .text {
+        height: 206px;
+      }
+    }
+    .content {
+      padding: 0;
+    }
+    .wrapper {
+      max-width: 1200px;
+    }
+    h3 {
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 20px 20px;
+      line-height: 1.2em;
+      @media(min-width: 1000px) {
+        text-align: left;
+        width: 80%;
+      }
+      @media(max-width:999px) {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+      }
+    }
+    p {
+      text-align: center;
+      padding: 0 20px 20px;
+      @media(min-width: 1000px) {
+        width: 20%;
+      }
+    }
+    @media(min-width:1000px) {
+      h3,
+      p {
+        padding: 0;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: relative;
+        float: left;
+      }
+    }
+  }
+  .rank-25 {
+    .section-header {
+      font-size: 2.125rem;
+      line-height: 2.6125rem;
+      @media(max-width: 1000px)and(min-width:801px) {
+        padding-top: 40px;
+      }
+      @media(min-width:1001px) {
+        max-width: 415px;
+      }
+    }
+    a {
+      &:hover {
+        background-color: #fff!important;
+        color: color(cisco-blue-light)!important;
+      }
+    }
+  }
+}
+.page-vendors-cisco-asap{
+  .rank-0{
+    .wrapper{
+      @include m-max-width(900px !important);
+    }
+  }
+  .rank-1{
+    padding-bottom:400px !important;
+    h2{
+      color:#58585b;
+        font-size:2.1875rem;
+    }
+    p{
+      color:#58585b; 
+      @include m-max-width(780px);
+      padding-bottom:1rem;
+    }
+  }
+  .rank-2{
+    h2{
+      text-align:left;
+        font-size:2.1875rem;
+    }
+    hr{
+      margin-top:50px;
+      margin-bottom:0px;
+      &:nth-child(1){
+        margin-top:0px;
+        margin-bottom:50px;
+      }
+    }
+  }
+  .rank-3{
+    border-bottom:60px solid #049fd9;
+    .body{
+      float:left;
+      width:40%;
+      color:white;
+      h2{
+      text-align:left;
+        color:white;
+        max-width:270px;
+        font-size:2.1875rem;
+      }
+    }
+    .hubspotForm{
+      float:left;
+      width:60%;
+      .hs-form.stacked.hs-form-private {
+        div.hs_submit{
+          .actions{
+            text-align:center !important;
+            .hs-button.primary:not(.inactive):not(.link){
+              background-color:#0078d7 !important;
+              color:white;
+              border-radius:50px;
+              @include cisco-normal;
+              font-size:1.3125rem;
+              text-transform:none!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.page-vendors-cisco-homepage {
+  .views-row-1 {
+    h1 {
+      font-size: 3.75rem;
+      line-height: 4.6125rem;
+    }
+  } // views-row-2 
+  .node-3906 {
+    @include cisco-two-col-left;
+  }
+  .views-row-3:not(.views-row-last),
+  .views-row-4:not(.views-row-last) {
+    @media(min-width: 981px) {
+      display: inline;
+      height: 580px;
+      padding: 0!important;
+      font-size: 0;
+    }
+    .node {
+      font-size: 1rem;
+      text-align: center;
+      vertical-align: top;
+      position: relative;
+      padding: 0;
+      @media(min-width: 981px) {
+        padding-top:0 !important;
+        padding-bottom: 0 !important;
+        display: inline-block;
+        width: 50%;
+        height: 580px;
+      }
+      .content {
+        height: initial;
+        max-width: 590px;
+        padding: 0 20px;
+        margin: 0 auto;
+        @media(min-width: 981px) {
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          /* IE 9 */
+          -webkit-transform: translateY(-50%);
+          /* Safari */
+          transform: translateY(-50%);
+          position: relative;
+        }
+        a.button {
+          background-color: color(cisco-blue-light) !important;
+          color: white !important;
+        }
+      }
+      &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: color(cisco-grey-dark-trans);
+      }
+      &:hover {
+        &:before {
+          background-color: color(cisco-blue-light-trans);
+        }
+        .content {
+          a.button {
+            background-color: white !important;
+            color: color(cisco-blue-light) !important;
+            &:hover {
+              background-color: color(cisco-grey-dark) !important;
+              color: white !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .views-row-5 {
+    .wrapper {
+      max-width: 820px;
+    }
+  } // views-row-6
+  .node-3926 {
+    @include cisco-arrow-button;
+    p {
+      @include cisco-bold;
+    }
+    .wrapper {
+      max-width: 890px;
+      .quote {
+        color: color(cisco-grey-darker);
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      a {
+        margin-top: 17px;
+        padding: 10px 35px !important;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.page-vendors-cisco-why-azlan-for-cisco {
+  //views-row-2, views-row-4, views-row-5
+  .node-3936,
+  .node-3946,
+  .node-3951 {
+    @include cisco-two-col-left;
+  } //views-row-3
+  .node-3941 {
+    @include cisco-two-col-right;
+  } //views-row-6
+  .node-3956 {
+    .wrapper {
+      max-width: 910px;
+    }
+    a.button {
+      @media(min-width: 981px) {
+        &:first-child {
+          margin-right: 11px;
+        }
+        &:last-child {
+          margin-left: 11px;
+        }
+      }
+      @media(max-width:980px) {
+        margin: 0 auto!important;
+        display: block;
+        max-width: 350px;
+      }
+    }
+  }
+}
+
+.page-vendors-cisco-architectures {
+  .views-row-1 {
+    .wrapper {
+      max-width: 800px;
+    }
+  } // views-row-2
+  .node-3966 {
+    @include cisco-arrow-button;
+    .text {
+      >h2,
+      >p {
+        max-width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      >p {
+        padding-bottom: 25px;
+      }
+    }
+    .row {
+      @media(min-width: 901px) {
+        display: inline-flex;
+      }
+      @media(max-width:900px) {
+        padding: 0 20px;
+      }
+      .col-3 {
+        background: color(white);
+        padding: 0;
+        margin: 17px 20px 0;
+        &:nth-child(2) {
+          margin: 17px 0 0;
+        }
+        @media(max-width:900px) {
+          width: 100%;
+          margin: 17px 0 0;
+        }
+        .top-panel {
+          p {
+            background: color(cisco-blue-light);
+            padding: 23px;
+            min-height: 120px;
+          }
+        }
+        .bottom-panel {
+          padding: 30px 35px;
+          h3.section-header {
+            color: color(cisco-blue-dark);
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+          }
+          p {
+            min-height: 260px;
+            &:last-child {
+              width: 73%;
+              margin: 0 auto;
+              min-height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-vendors-cisco-architectures-collaboration,
+.page-vendors-cisco-architectures-security,
+.page-vendors-cisco-architectures-data-centre,
+.page-vendors-cisco-architectures-digital-network,
+.page-vendors-cisco-architectures-refresh,
+.page-vendors-cisco-architectures-services {
+  // views-row-1
+  .node-3971 {
+    .wrapper {
+      max-width: 690px;
+    }
+  }
+  .node-3986 {
+    .wrapper {
+      max-width: 940px;
+    }
+  }
+  .node-4006 {
+    .wrapper {
+      max-width: 930px;
+    }
+  }
+  .node-4021 {
+    .wrapper {
+      max-width: 850px;
+    }
+  }
+  .node-4041,
+  .node-4056 {
+    .wrapper {
+      max-width: 690px;
+    }
+  }
+  .views-row-2 {
+    .node-text-image {
+      @include cisco-two-col-left;
+      @media(min-width: 981px) {
+        height: 510px!important;
+        &:not(.node-4011, .node-4061) {
+          .content {
+            padding-right: 35px;
+          }
+        }
+      }
+    }
+  }
+  .views-row-3 {
+    .text {
+      >p {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        &:nth-child(3) {
+          max-width: 930px;
+        }
+      }
+      .col-3,
+      .col-4 {
+        @media(min-width: 981px) {
+          margin-top: 30px;
+        }
+        @media(max-width:800px) {
+          margin-top: 10px;
+          padding: 0 20px;
+          p {
+            text-align: center!important;
+          }
+        }
+        .imageheader {
+          min-height: 90px;
+        }
+      }
+    }
+  }
+  .views-row-4 {
+    .node-4001 {
+      .wrapper {
+        max-width: 850px;
+      }
+    }
+    .node-4036 {
+      .wrapper {
+        position: relative;
+      }
+      h2 {
+        text-align: left;
+      }
+      @media(max-width:980px) {
+        .text {
+          text-align: center;
+          padding: 0 20px;
+        }
+      }
+    }
+    .node-4071 {
+      h3 {
+        @include cisco-bold;
+        color: color(cisco-blue-dark);
+        img {
+          margin-right: 20px;
+        }
+        min-height:70px;
+      }
+      .col-3 {
+        @media(min-width: 981px) {
+          margin-top: 30px;
+          p {
+            clear: both;
+          }
+        }
+        @media(max-width:800px) {
+          margin-top: 10px;
+          padding: 0 20px;
+          p {
+            text-align: center!important;
+            clear: both;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-vendors-cisco-support-programmes {
+  .views-row-1 {
+    .wrapper {
+      max-width: 650px;
+    }
+  }
+  .node-4081,
+  .node-4351 {
+    @include cisco-arrow-button;
+    h2.section-header {
+      font-size: 2.1875rem;
+    }
+    .subtitle {
+      padding-bottom: 48px;
+      font-size: 1rem;
+    }
+    .col-3 {
+      @media (max-width: 1199px) {
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+      @media (min-width:1200px) {
+        width: 32%;
+        min-height: 460px;
+        margin-left: 0.65%;
+        margin-right: 0.65%;
+      }
+      border:1px solid #ccc;
+      background-color: white;
+      padding:55px;
+      &:hover {
+        background-color: #fafafa;
+      }
+      h3 {
+        font-size: 1.3125rem;
+        line-height: 1.75rem;
+        margin-top: 35px;
+        margin-top: 0;
+        @include cisco-bold;
+        img {
+          margin-top: 5px;
+          margin-right: 15px;
+        }
+      }
+      p {
+        font-size: 1rem;
+      }
+      a {
+        text-decoration: underline!important;
+      }
+    }
+  }
+}
+
+.page-vendors-cisco-support-programmes-fundamentals{
+  @media (min-width:800px){
+    h2,h3{
+      text-align:left;
+
+      &.section-header{
+        text-align:center;
+      }
+    }
+  }
+  .rank-1{
+    h2,h3{
+      color:color(cisco-blue-font);
+    }
+    hr{
+      margin:40px auto;
+      width:49px;
+      border:0px;
+      border-top:2px solid #049fd9;
+    }
+    .subtitle{
+      @include m-max-width(880px);
+    }
+  }
+  .rank-2,.rank-4,.rank-6,.rank-7{
+    h2,h3{
+      color:color(cisco-grey-dark);
+    }
+  }
+  .rank-6,.rank-4,.rank-5,.rank-8{
+
+    @media(min-width:981px){
+      padding-top:0 !important;
+      padding-bottom:0 !important;
+      height:500px;
+      .content .text{
+        @include vertical-align();
+      }
+      .image-on-right,
+      .image-on-left{
+        text-align:center;
+        img{
+          @include vertical-align(); 
+        }
+      }
+      &.displayImageOnLeft .col-2.content-on-right{
+          padding-left:90px;
+      }
+      &.displayImageOnRight .col-2.content-on-left{
+          padding-right:90px;
+      }
+    }
+    @media(max-width:980px){
+      height:auto;
+      padding-top:70px;
+      padding-bottom:70px;
+      h2,h3,p{
+        padding-left:20px;
+        padding-right:20px;
+        text-align:center!important;
+      }
+    }
+
+  }
+
+  .rank-2,.rank-7{
+    @media(min-width:981px){
+      height:560px;
+      padding-top:0 !important;
+      padding-bottom:0 !important;
+      .content {
+        @include vertical-align();
+        .text{
+          width:50%;
+          margin-left:50%;
+          padding-left: 90px;
+        }
+      }
+    }
+    @media(max-width:980px){
+      height:auto;
+      padding-top:70px;
+      padding-bottom:70px;
+      background:none !important;
+      background-color:color(cisco-grey-dark) !important;
+      color:white;
+      h2,h3,p{
+        color:white;
+        padding-left:20px;
+        padding-right:20px;
+        text-align:center!important;
+      }
+    }
+  }
+  .rank-5,.rank-8{
+    background-color:color(cisco-blue-dark);
+    color:white;
+  }
+  .rank-5{
+    height :692px;
+  }
+  .rank-8{
+    height:650px;
+  }
+  .rank-4{
+    height:590px;
+  }
+}
+.page-vendors-cisco-support-programmes-momentum-boost,
+.page-vendors-cisco-support-programmes-momentum-aces {
+  .node-4276 {
+    .wrapper {
+      max-width: 800px;
+    }
+  }
+  .views-row-3 {
+    h2 {
+      @media(min-width: 801px) {
+        text-align: left;
+        max-width: 300px;
+      }
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid #b1b1b3;
+      &:nth-of-type(1) {
+        margin-bottom: 55px;
+      }
+      &:nth-of-type(2) {
+        margin-top: 25px;
+      }
+    }
+    .col-3wide {
+      >p {
+        padding-bottom: 25px;
+      }
+      .col-2 {
+        margin-bottom: 30px;
+        h3 {
+          margin-top: 57px;
+          margin-bottom: 10px;
+          font-size: 1.125rem;
+          line-height: 1.675rem;
+          color: color(cisco-blue-dark);
+          @include cisco-bold;
+          @media(min-width: 801px) {
+            &:first-child {
+            margin-top: 7px;
+             
+            }
+          }
+        }
+        p {
+          padding-bottom: 7px;
+        }
+        li {
+          list-style: none;
+          margin-left: 30px;
+          padding: 2px 0;
+          line-height: 1.5rem;
+          @include cisco-bold;
+          @media(min-width: 801px) {
+            &:before {
+              content: url(/sites/default/files/button-arrow-blue.png);
+              display: inline-block;
+              width: 15px;
+              height: 15px;
+              margin-right: 15px;
+              margin-left: -30px;
+              transform: translateY(4px);
+            }
+          }
+          strong {
+            line-height: 1.5rem;
+            @include cisco-bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-vendors-cisco-products {
+  .node-4166 {
+    @include cisco-arrow-button-white;
+    .text {
+      >p {
+        max-width: 625px;
+        margin: 0 auto;
+      }
+    }
+    .row {
+      @media(min-width: 901px) {
+        display: inline-flex;
+      }
+      @media(max-width:900px) {
+        padding: 0 20px;
+      }
+      .col-3 {
+        background: color(white);
+        padding: 0;
+        margin: 17px 20px 0;
+        &:nth-child(2) {
+          margin: 17px 0 0;
+        }
+        &.first {
+          background: #049fd9;
+        }
+        &.second {
+          background: #005073;
+        }
+        &.third {
+          background: #e77000;
+        }
+        &.fourth {
+          background: #243340;
+        }
+        &.fifth {
+          background: #14a795;
+        }
+        &.sixth {
+          background: #666669;
+        }
+        @media(max-width:900px) {
+          width: 100%;
+          margin: 17px 0 0;
+        }
+        .inner {
+          padding: 50px 55px 35px;
+          h3 {
+            color: color(white);
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+          }
+          p {
+            color: color(white);
+            &:last-child {
+              width: 70%;
+              margin: 0 auto;
+            }
+          }
+          a {
+            color: color(white)!important;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-vendors-cisco-compute,
+.page-vendors-cisco-cisco-one-for-data,
+.page-vendors-cisco-routers,
+.page-vendors-cisco-switches,
+.page-vendors-cisco-wireless,
+.page-vendors-cisco-sdn {
+
+
+  .views-row-1 {
+    .wrapper {
+      max-width: 800px;
+    }
+    .node-3001 .wrapper,
+    .node-2981 .wrapper {
+      max-width: 950px;
+    }
+    .node-3006 .wrapper {
+      max-width: 1000px;
+    }
+    h1 {
+      line-height: 3.125rem;
+    }
+  }
+  .views-row-2 {
+    @media(min-width: 801px) {
+      .wrapper {
+        max-width: 1080px;
+        h2,
+        p {
+          text-align: left;
+        }
+        .col-3 {
+          padding-right: 60px;
+        }
+        .col-3wide {
+          max-width: 650px;
+          p {
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  .views-row-3 {
+    h2 {
+      margin-bottom: 55px;
+      text-align: center;
+    }
+    strong {
+      font-size: 1.125rem;
+      color: color(cisco-blue-dark);
+      padding-bottom: 15px;
+      display: inline-block;
+      @include cisco-bold;
+    }
+    .row {
+      @media(min-width: 801px) {
+        &:nth-of-type(2) {
+          margin-top: 20px;
+        }
+      }
+      .col-3 {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.vendor-cisco-resources {
+  #main {
+    @include vendor-cisco;
+    #block-views-resources-page-block-1 {
+      h2 {
+        color: black;
+      }
+    }
+    .pager-item a {
+      background-image: none !important;
+      padding-right: 0px !important;
+    }
+  }
+  footer {}
+}
+
+.next-step-panel {
+  height: 560px;
+
+  h2 {
+    text-align: left;
+    @include font-page-section-header();
+    color: white;
+  }
+  .content {
+    background-color: color(cisco-grey-dark);
+    color: color(white);
+
+    .text {
+      max-width: 600px;
+      padding-left: 50px;
+      text-align: left;
+      p {
+        a.button {
+          &:hover {
+            color: color(cisco-blue-light) !important;
+            background-color: white !important;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width:1000px) {
+    height: 460px;
+    hr {
+      @include m-max-width(200px);
+      margin-bottom: 35px;
+    }
+    .image-on-left {
+      display: none;
+    }
+    .content-on-right {
+      @include panel(1, 1, 0);
+      width: 100%;
+      margin-left: 0;
+      .text {
+        max-width: 100%;
+        padding: 0 50px;
+        p,
+        p.subtitle,
+        h3.section-header {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

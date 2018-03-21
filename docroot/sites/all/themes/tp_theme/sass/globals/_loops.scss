@@ -1,0 +1,107 @@
+
+// Create multiple columns.
+$columns: 12;
+
+
+@mixin col($i) {
+  width: ((1% * 100) / $i)-$isEditor;
+  box-sizing:border-box;
+  float:left;
+  @if($lang == "ar-ae"){
+    float:right;
+  }
+  color:inherit;
+  height:inherit;
+  p{
+  }
+  @media (max-width:800px){
+    width:100%;
+    margin-left:0;
+    margin-right:0;
+    display:block;
+    padding: 0;
+    text-align: center;
+    float:none;
+    clear:both;
+  }
+  @media (min-width: 800px) and (max-width:1200px){
+    padding-left:10px;
+  }
+  @media (min-width: 1200px) {
+    &:first-child{
+      padding-left:0;
+    }
+    &:last-child{
+      padding-right:0;
+    }
+  }
+
+  @if($i == 1) {
+    float: none;
+  }
+  @if($i == 2) {
+    padding-left:40px;
+    padding-right:40px;
+  }
+  @if($i == 3) {
+    padding-left:30px;
+    padding-right:30px;
+  }
+  @if($i == 4) {
+    padding-left:20px;
+    padding-right:20px;
+  }
+  @if($i > 4) {
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+
+}
+
+@for $i from 1 through $columns {
+	.col-#{$i} {
+    @include col($i);
+	}
+}
+
+@mixin col-3wideleft{
+  @include col(3);
+  width: 66%;
+  margin-left: 0;
+  text-align: left;
+  @media (max-width: 1200px){
+    padding-left: 10px;
+  }
+  @media (max-width:799px){
+    width:100%;
+    margin:0;
+    padding-left:10px;
+    padding-right:10px;
+    text-align: center;
+    p.subtitle{
+      text-align: center !important;
+    }
+  }
+}
+
+.col-3wideleft{
+	@include col-3wideleft;
+}
+
+@mixin col-3wide {
+  width: 66%;
+  margin-left: 33.333%;
+
+  @media (max-width:799px){
+    width:100%;
+    margin:0;
+    padding-left:10px;
+    padding-right:10px;
+    text-align: center;
+  }
+}
+
+.col-3wide {
+  @include col-3wide;
+}

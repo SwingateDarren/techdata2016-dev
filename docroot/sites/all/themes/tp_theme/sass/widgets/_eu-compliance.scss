@@ -1,0 +1,20 @@
+#euCompliance{
+	background-color: color(blue-medium);
+	color:white;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	padding:10px;
+	margin:0;
+	z-index:10;
+	font-size:13px;
+	.wrapper{
+		@include m-max-width(1200px);
+
+		.euCookieOkBtn{
+			@include button-orange;
+			    padding: 5px 10px !important;
+    			margin: 0px 0 0 20px;
+		}
+	}	
+}

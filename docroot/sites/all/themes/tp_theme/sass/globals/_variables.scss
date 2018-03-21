@@ -1,0 +1,132 @@
+$imageBannerMaxWidth: 1900px;
+$panelTopHeight:70px;
+$panelBottomHeight:70px;
+// =============================================================================
+// 03 FONT WEIGHT
+// =============================================================================
+
+$lightest:100;
+$light:300;
+$normal:400;
+$medium:500;
+$bold:700;
+
+// =============================================================================
+// 02 FONT FAMILY
+// =============================================================================
+$base-font-size:16px;
+$base-font-family:"Helvetica";
+$base-header-font:"Helvetica";
+$banner-header-font:"Helvetica";
+$base-font-weight:$light;
+
+$ms-semi-bold :"Helvetica";
+// =============================================================================
+// 04 COLOURS
+// =============================================================================
+$white: #fff;
+$black:	#000;
+
+$colors: (
+	black: $black,
+	black-lighter:#212324,
+	white: $white,
+	blue-medium : #00558c,
+	blue-lighter: #00AFD7,
+	blue-darker:#132E56,
+	grey-lightest:#EEF2F4,
+	grey-lightest-trans:#EEF2F4AA,
+	grey-lighter:#E2E7EA,
+	grey-medium:#CAD5DA,
+	grey-dark:#9DACB2,
+	grey-darker:#8A979B,
+	grey-darkest:#3D4042,
+	grey-darkest-trans:rgba(61,64,66,0.95),
+	green-medium:#8DC63F,
+	green-lighter:#D7DF23,
+	orange-medium:#FBAD18,
+	grey-text:#3D4042,
+	nav-normal:#212324,
+	nav-normal-active:#3D4042,
+	nav-active:#141515,
+	nav-seperator:#363a3c,
+
+	ms-blue-medium : #1074dc,
+	ms-blue-link : #007CD2,
+	ms-blue-dark: #0078d7,
+	ms-blue-darker: #00188f,
+	ms-blue-darker-trans: rgba(0,24,143,0.8),
+	ms-grey-lighter:#f2f2f2,
+
+
+	ibm-black:#000000,
+	ibm-blue-medium:#4178be,
+	ibm-blue-dark:#043d6d,
+	ibm-purple-dark:#3c0158,
+	ibm-red:#d82f25,
+	ibm-purple-medium:#811f82,
+	ibm-blue-light:#15aff4,
+	ibm-green-medium:#8cc624,
+	ibm-yellow-medium:#fcfb00,
+	ibm-yellow-dark:#fcbc00,
+	ibm-grey-light:#e1e1e1,
+	ibm-grey-dark:#333333,
+
+	oracle-grey-light:#e1e1e1,
+	oracle-blue-dark:#0078d7,
+
+	cisco-blue-font:#132e56,
+	cisco-blue-dark:#005073,
+	cisco-blue-light:#049fd9,
+	cisco-blue-light-trans:rgba(4,159,217,0.8),
+	cisco-grey-light:#ededed,
+	cisco-grey-dark-trans:rgba(88,88,91,0.8),
+	cisco-grey-dark:#58585b,
+	cisco-grey-darker:#303032,
+
+
+	hpe-green: #01a982,
+	hpe-grey: #425563,
+	hpe-light-grey: #e1e1e1,
+
+  
+	moto-red-medium:#e1140A,
+	moto-orange-medium:#ff6a00,
+	moto-yellow-medium:#fee600,
+	moto-blue-medium:#3e8ddd,
+	moto-blue-light:#46c8e1,
+	moto-pink-medium:#f04187,
+	moto-green-medium:#6ac346,
+	moto-grey-darker:#222c30,
+	moto-grey-dark:#333f48,
+	moto-grey-medium:#6f7170,
+	moto-grey-lighter:#c4beb6,
+	moto-grey-light:#efefef
+
+);
+
+// =============================================================================
+// 05 COLOURS ARRAY
+// =============================================================================
+
+@function color($key) {
+	@if map-has-key($colors, $key) {
+		@return map-get($colors, $key);
+	}
+	@if map-has-key($colors, $key)==false {
+		@return #000;
+	}
+}
+
+// =============================================================================
+// 05 THEME VARIABLES
+// =============================================================================
+$main-max-width: 1220px;
+$banner-max-width: 860px;
+
+// =============================================================================
+// 06 font-sizes
+// =============================================================================
+
+
+$imageSize:126px;

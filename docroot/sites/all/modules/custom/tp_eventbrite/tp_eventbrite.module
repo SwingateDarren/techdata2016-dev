@@ -1,0 +1,49 @@
+<?php
+// Trusted Advisor from TechData
+// KEY :: JRTK6NAX2QQSHOBUXY
+// Client secret :: LBFRLNYVT3S7AT6DHEZD35D75NJHG4WBLM7NGVO4IY4W7RUCB2
+// Your personal OAuth token :: FPMOK2VR6L24NIH4BH5Z
+// Anonymous access OAuth token :: VBQKGZAZPQ5PYBA7IM2J
+
+require_once("eventbrite_api.php");
+/**
+ * Impliment hook_cron().
+ */
+function tp_eventbrite_cron() {
+  // Do something when cron runs.
+	// disabled
+	// tp_eventbrite_import();
+}
+
+/**
+ * Implements hook_permission().
+ */
+function tp_eventbrite_permission() {
+	return array(
+		'administer eventbrite' => array(
+			'title' => t('Administer Eventbrite'),
+		)
+	);
+}
+
+/* *
+ * Implements hook_menu().
+ */
+function tp_eventbrite_menu() {
+	// error_log(__FUNCTION__."@".__LINE__);
+	$items = Array();
+	// Admin configuration settings.
+	$items['admin/config/eventbrite/import'] = array(
+		'title'	=> 'EventBrite Import Tool',
+		'description' => 'Manage settings and configuration for HubSpot Personalisation.',
+		'access arguments' => array('administer eventbrite'),
+		'page callback' => 'tp_eventbrite_import'
+	);
+	return $items;
+}
+
+function tp_eventbrite_import(){
+	// $obj = new tp_eventbrite_importer();
+	// $obj->start();
+	return "<pre>Process Disabled</pre>";
+}

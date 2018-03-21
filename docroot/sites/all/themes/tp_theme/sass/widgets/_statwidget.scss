@@ -1,0 +1,32 @@
+.statwidget {
+	margin-top:30px;
+	padding:0;
+	background: url('../images/circle-blue-dark.png') center 10px no-repeat;
+	text-align: center;
+
+	.prefix {
+		display: inline-block;
+		text-align: right;
+		color: color(white);
+		font-size: 4.375rem;
+		width: auto;
+	}
+	.postfix {
+		display: inline-block;
+		color: color(white);
+		font-size: 1.875rem;
+	}
+	.value {
+		padding-top: 70px;
+		height: 220px;
+		display: inline-block;
+		font-size: 4.375rem;
+		text-align: center;
+		color: color(white);
+	}
+	
+	.label{
+		@include m-max-width(260px);
+		margin-top:30px;
+	}
+}
